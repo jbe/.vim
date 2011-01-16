@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/jbe/dev/koans/autotest'
-let g:netrw_dirhist_2='/home/jbe/.vicoblog/test/_layouts'
-let g:netrw_dirhist_3='/home/jbe/dev/action_tree/.yardoc'
-let g:netrw_dirhist_4='/home/jbe/.jconf/vim/ftplugin'
-let g:netrw_dirhist_5='/home/jbe/.jconf/vim/indent'
-let g:netrw_dirhist_6='/home/jbe/.jconf/vim/plugin'
