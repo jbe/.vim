@@ -2,7 +2,7 @@
 TO INSTALL:
 
 cd ~
-git clone "http://github.com/jbe/.vim.git"
+git clone http://github.com/jbe/.vim.git
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 cd ~/.vim
