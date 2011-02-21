@@ -4,24 +4,26 @@
 "  Jostein B. Eliassen
 "
 
+
+" PATHOGEN
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 
 
 " ESSENTIALS
-set nocompatible                    " Use Vim settings rather than Vi. Must be set first.
-set runtimepath+=$HOME/.jconf/vim
+set nocompatible                    " Vim settings -- not Vi. Must be first.
 filetype on                         " filetype detection
 filetype plugin on                  " allow ftplugins
 
 
 " APPEARANCE
-color tango                         " in .jconf/vim
-syntax on                           " syntax highlighting
+color jellybeans                    " syntax highlighting
+syntax on                           " 
 
-highlight RedundantWhitespace ctermbg=red guibg=red
-match RedundantWhitespace /\s\+$\| \+\ze\t/
+"highlight RedundantWhitespace ctermbg=red guibg=red
+"match RedundantWhitespace /\s\+$\| \+\ze\t/
+" uncomment in case of friends who are coding nazis.
 
 set ruler		                    " always show cursor position
 set showmode		                " display curent mode
@@ -54,22 +56,33 @@ set incsearch
 
 
 " MAPPINGS
-map <F1> :tabp<CR>
-map <F2> :tabn<CR>
-map <F3> :tabnew 
+map <F1> :tabnew 
+map <F2> :set filetype=
+map <F3> :TlistToggle <CR>
 map <F4> :NERDTreeToggle<CR>
 
-map <F5> :!./%<CR>
-map <F6> :set filetype=
-map <F7> :set fileencoding=
-map <F8> :set termencoding=
+map <F5> :set fileencoding=
+map <F6> :set termencoding=
+"map <F7> free
+map <F8> :!./%<CR>
 
-map <F9> :tabnew ~/.jconf/
-map <F10> :Snippet<CR>
-map <F11> :SCROLL<CR> " color scroller
-map <F12> :TlistToggle <CR>
+
+map <F9> :JekyllPost
+map <F10> :JekyllList
+map <F11> :JekyllBuild
+map <F12> :Gist
+
+
 
 map <C-Space> :!
+
+
+
+" TECHNICAL
+set mouse=a
+set encoding=utf-8
+set fileencoding=utf-8
+set termencoding=utf-8
 
 
 
@@ -80,11 +93,7 @@ let g:html_use_encoding = "utf8"
 let g:use_xhtml = 1
 let g:jekyll_path = "~/code_blog"
 
-
-
-" TECHNICAL
-set mouse=a
-set encoding=utf-8
-set fileencoding=utf-8
-set termencoding=utf-8
+"if !exists('*Wordpress_vim')
+"runtime vimblog.vim
+"endif
 

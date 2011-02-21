@@ -1,0 +1,8 @@
+# Add the lang code for every language.
+[po4a_langs] $LANGUAGE_LIST
+
+# Po and pot paths
+[po4a_paths] blogit-doc.pot	$lang:$lang-doc.po
+
+# Document is created with the correct lang extension.
+[type:text] ../doc/blogit.txt	$lang:../doc/blogit.$langx
