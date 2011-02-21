@@ -8,3 +8,48 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 cd ~/.vim
 git submodule init
 git submodule update
+
+
+FEATURES
+
+* My opinions
+
+* Syntax support
+  - Markdown (and markdown-preview)
+  - CoffeeScript
+  - Slim templates
+
+* Integration
+  - Git (fugitive.vim)
+  - Jekyll blogging (jekyll.vim)
+  - Wordpress blogging (blogit.vim)
+  - Hithub gists (gist.vim)
+
+* Useful plugins
+  - NERDTree
+  - Taglist
+  - Tab completion (snipmate.vim)
+
+
+REQUIREMENTS
+
+Exuberant ctags (for taglist)
+$ sudo apt-get install ctags
+
+Pandoc (for wordpress integration)
+$ sudo apt-get install pandoc
+
+
+BLOGGING TO WORDPRESS
+
+$ cp passwords.vim.template passwords.vim
+$ vim passwords.vim
+
+Make sure ruby and pandoc is installed. Wordpress timezone settings might prevent your posts from being immediately released.
+
+
+TIPS
+
+Have a look at the key bindings in vimrc for some inspiration.
+
+Do :BundleInstall to update the plugins at any time :)

@@ -5,9 +5,29 @@
 "
 
 
-" PATHOGEN BUNDLES
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" Vundle bundles:
+
+set rtp+=~/.vim/vundle.git/ 
+call vundle#rc()
+
+" language support
+Bundle "markdown.vim"
+Bundle "markdown-preview.vim"
+Bundle "slim.vim"
+
+" integration
+Bundle "fugitive.vim"
+Bundle "blogit.vim"
+Bundle "jekyll.vim"
+Bundle "gist.vim"
+
+" navigation
+Bundle "nerdtree.vim"
+Bundle "taglist.vim"
+
+" useful
+Bundle "snipmate.vim"
+Bundle "https://github.com/flazz/vim-colorschemes.git"
 
 
 " ESSENTIALS
