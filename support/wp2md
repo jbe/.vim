@@ -6,7 +6,7 @@ CODE_BLOCK_REGEX      = /#{CODE_START_REGEX}(.+)#{CODE_END_REGEX}/m
 
 def pipe(command, str)
 
-  IO.popen(command.split, 'r+') do |io|
+  IO.popen(command, 'r+') do |io|
     io.write str
     io.close_write
     io.read 
