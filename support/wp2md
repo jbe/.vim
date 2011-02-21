@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require 'cgi'
+
 CODE_START_REGEX      = /\[sourcecode language="([_a-zA-Z0-9]+)"\]/
 CODE_END_REGEX        = /\[\/sourcecode\]/
 CODE_BLOCK_REGEX      = /#{CODE_START_REGEX}(.+)#{CODE_END_REGEX}/m
@@ -36,7 +38,7 @@ html = pipe(
 html.gsub!(token_regex) do |match|
   code_piece = code_pieces[$1.to_i]
   "[code #{code_piece[0]}]" +
-  "#{code_piece[1]}" +
+  CGI.unescapeHTML(code_piece[1]) +
   "[end]\n"
 end
 

@@ -42,10 +42,10 @@ $ sudo apt-get install pandoc
 
 BLOGGING TO WORDPRESS
 
+Make sure ruby and pandoc is installed. Wordpress timezone settings might prevent your posts from being immediately released.
+
 $ cp passwords.vim.template passwords.vim
 $ vim passwords.vim
-
-Make sure ruby and pandoc is installed. Wordpress timezone settings might prevent your posts from being immediately released.
 
 I am using two wrapper scripts to enable syntax highlighting. If you use the following syntax, it should be highlighted on wordpress.com:
 
