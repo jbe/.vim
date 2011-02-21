@@ -5,10 +5,9 @@
 "
 
 
-" PATHOGEN
+" PATHOGEN BUNDLES
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
-
 
 
 " ESSENTIALS
@@ -23,7 +22,7 @@ syntax on                           "
 
 "highlight RedundantWhitespace ctermbg=red guibg=red
 "match RedundantWhitespace /\s\+$\| \+\ze\t/
-" uncomment in case of friends who are coding nazis.
+" uncomment in case of nazi takeover.
 
 set ruler		                    " always show cursor position
 set showmode		                " display curent mode
@@ -40,6 +39,7 @@ set autoindent
 set smartindent
 set expandtab
 set smarttab
+
 
 " ERGONOMICS
 set backspace=indent,eol,start      " liberal backspacing in insert mode
@@ -66,13 +66,10 @@ map <F6> :set termencoding=
 "map <F7> free
 map <F8> :!./%<CR>
 
-
-map <F9> :JekyllPost
-map <F10> :JekyllList
-map <F11> :JekyllBuild
-map <F12> :Gist
-
-
+map <F9> :Blogit new<CR>
+map <F10> :Blogit ls<CR>
+map <F11> :Blogit commit<CR>:Blogit push<CR>
+map <F12> :Gist 
 
 map <C-Space> :!
 
@@ -96,4 +93,7 @@ let g:jekyll_path = "~/code_blog"
 "if !exists('*Wordpress_vim')
 "runtime vimblog.vim
 "endif
-
+"
+let blogit_unformat='$HOME/.vim/support/wp2md'
+let blogit_format='$HOME/.vim/support/md2wp'
+let g:gist_clip_command = 'xclip -selection clipboard'

@@ -1,0 +1,44 @@
+#!/usr/bin/env ruby
+
+CODE_START_REGEX      = /\[sourcecode language="([_a-zA-Z0-9]+)"\]/
+CODE_END_REGEX        = /\[\/sourcecode\]/
+CODE_BLOCK_REGEX      = /#{CODE_START_REGEX}(.+)#{CODE_END_REGEX}/m
+
+def pipe(command, str)
+
+  IO.popen(command.split, 'r+') do |io|
+    io.write str
+    io.close_write
+    io.read 
+  end 
+
+end
+
+token       = (0...24).map{65.+(rand(25)).chr}.join
+token_regex = /#{token}([0-9]+)\%/
+
+code_pieces = []
+
+prepped = ARGF.read.gsub(CODE_BLOCK_REGEX) do |match|
+
+  language = $1
+  code = $2
+
+  code_pieces << [language, code]
+  "#{token}#{code_pieces.size - 1}%"
+end
+
+html = pipe(
+  'pandoc --from=html --to=markdown --no-wrap --strict',
+  prepped
+  )
+
+html.gsub!(token_regex) do |match|
+  code_piece = code_pieces[$1.to_i]
+  "[code #{code_piece[0]}]" +
+  "#{code_piece[1]}" +
+  "[end]\n"
+end
+
+puts html
+
