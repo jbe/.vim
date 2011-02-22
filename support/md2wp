@@ -2,7 +2,7 @@
 
 CODE_START_REGEX      = /\[code ([_a-zA-Z0-9]+)\]/
 CODE_END_REGEX        = /\[end\]/
-CODE_BLOCK_REGEX      = /#{CODE_START_REGEX}(.+)#{CODE_END_REGEX}/m
+CODE_BLOCK_REGEX      = /#{CODE_START_REGEX}(.+?)#{CODE_END_REGEX}/m
 
 def pipe(command, str)
 
