@@ -5,32 +5,32 @@
 "
 
 
-" Vundle bundles:
-
+" vundle bundles:
 set rtp+=~/.vim/vundle.git/ 
 call vundle#rc()
 
 " language support
-Bundle "markdown.vim"
-Bundle "markdown-preview.vim"
+Bundle "https://github.com/plasticboy/vim-markdown.git"
+Bundle "https://github.com/robgleeson/vim-markdown-preview.git"
 Bundle "slim.vim"
 
 " integration
-Bundle "fugitive.vim"
+Bundle "https://github.com/csexton/jekyll.vim.git"
+Bundle "https://github.com/tpope/vim-fugitive.git"
 Bundle "blogit.vim"
-Bundle "jekyll.vim"
 Bundle "gist.vim"
 
 " navigation
-Bundle "nerdtree.vim"
+Bundle "https://github.com/scrooloose/nerdtree.git"
 Bundle "taglist.vim"
 
 " useful
 Bundle "snipmate.vim"
 Bundle "https://github.com/flazz/vim-colorschemes.git"
+Bundle "https://github.com/vim-scripts/Conque-Shell.git"
 
 
-" ESSENTIALS
+" BASIC
 set nocompatible                    " Vim settings -- not Vi. Must be first.
 filetype on                         " filetype detection
 filetype plugin on                  " allow ftplugins
@@ -83,7 +83,7 @@ map <F4> :NERDTreeToggle<CR>
 
 map <F5> :set fileencoding=
 map <F6> :set termencoding=
-"map <F7> free
+map <F7> :ConqueTermTab zsh
 map <F8> :!./%<CR>
 
 map <F9> :Blogit new<CR>
