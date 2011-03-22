@@ -9,6 +9,9 @@
 set rtp+=~/.vim/vundle.git/ 
 call vundle#rc()
 
+" libraries
+Bundle "https://github.com/vim-scripts/L9.git"
+
 " language support
 Bundle "https://github.com/plasticboy/vim-markdown.git"
 Bundle "https://github.com/robgleeson/vim-markdown-preview.git"
@@ -23,11 +26,18 @@ Bundle "gist.vim"
 " navigation
 Bundle "https://github.com/scrooloose/nerdtree.git"
 Bundle "taglist.vim"
+Bundle "https://github.com/majutsushi/tagbar.git"
+"Bundle "https://github.com/fholgado/minibufexpl.vim.git"
+Bundle "https://github.com/vim-scripts/FuzzyFinder.git"
 
 " useful
 Bundle "snipmate.vim"
 Bundle "https://github.com/flazz/vim-colorschemes.git"
 Bundle "https://github.com/vim-scripts/Conque-Shell.git"
+Bundle "https://github.com/vim-scripts/Align.git"
+Bundle "https://github.com/vim-scripts/AnsiEsc.vim.git"
+Bundle "https://github.com/vim-scripts/vimwiki.git"
+
 
 
 " BASIC
@@ -40,9 +50,9 @@ filetype plugin on                  " allow ftplugins
 color jellybeans                    " syntax highlighting
 syntax on                           " 
 
+" uncomment in case of nazi takeover:
 "highlight RedundantWhitespace ctermbg=red guibg=red
 "match RedundantWhitespace /\s\+$\| \+\ze\t/
-" uncomment in case of nazi takeover.
 
 set ruler		                    " always show cursor position
 set showmode		                " display curent mode
@@ -76,15 +86,15 @@ set incsearch
 
 
 " MAPPINGS
-map <F1> :tabnew 
-map <F2> :set filetype=
-map <F3> :TlistToggle <CR>
-map <F4> :NERDTreeToggle<CR>
+map <F1> :FufFile<CR>
+map <F2> :FufBuffer<CR>
+map <F3> :FufBufferTag<CR>
+map <F4> :FufDir<CR>
 
-map <F5> :set fileencoding=
-map <F6> :set termencoding=
-map <F7> :ConqueTermTab zsh
-map <F8> :!./%<CR>
+map <F5> :NERDTreeToggle<CR>
+map <F6> :ConqueTerm zsh
+map <F7> :set fileencoding=
+map <F8> :set filetype=
 
 map <F9> :Blogit new<CR>
 map <F10> :Blogit ls<CR>
@@ -104,16 +114,18 @@ set termencoding=utf-8
 
 
 " TOOL CONFIGURATION
-let g:html_use_css = 1           " Used by :TOhtml
+
+source ~/.vim/functions.vim
+
+" TOhtml stuff
+let g:html_use_css = 1
 let g:html_number_lines = 0
+let g:html_ignore_folding = 1
 let g:html_use_encoding = "utf8"
 let g:use_xhtml = 1
+
 let g:jekyll_path = "~/code_blog"
 
-"if !exists('*Wordpress_vim')
-"runtime vimblog.vim
-"endif
-"
 let blogit_unformat='$HOME/.vim/support/wp2md'
 let blogit_format='$HOME/.vim/support/md2wp'
 let g:gist_clip_command = 'xclip -selection clipboard'

@@ -8,6 +8,7 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 cd ~/.vim
 git submodule init
 git submodule update
+vim +BundleInstall +q
 
 
 FEATURES
@@ -18,6 +19,7 @@ FEATURES
   - Markdown (and markdown-preview)
   - CoffeeScript
   - Slim templates
+  - ANSI escaped files
 
 * Integration
   - Git (fugitive.vim)
@@ -26,9 +28,13 @@ FEATURES
   - Hithub gists (gist.vim)
 
 * Useful plugins
+  - FuzzyFinder
   - NERDTree
   - Taglist
+  - Tagbar
+  - Align
   - Tab completion (snipmate.vim)
+  - ConqueShell
 
 
 REQUIREMENTS
