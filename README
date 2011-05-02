@@ -24,7 +24,6 @@ FEATURES
 * Integration
   - Git (fugitive.vim)
   - Jekyll blogging (jekyll.vim)
-  - Wordpress blogging (blogit.vim)
   - Hithub gists (gist.vim)
 
 * Useful plugins
@@ -42,30 +41,10 @@ REQUIREMENTS
 Exuberant ctags (for taglist)
 $ sudo apt-get install ctags
 
-Pandoc (for wordpress integration)
-$ sudo apt-get install pandoc
-
-
-BLOGGING TO WORDPRESS
-
-Make sure ruby and pandoc is installed. Wordpress timezone settings might prevent your posts from being immediately released.
-
-$ cp passwords.vim.template passwords.vim
-$ vim passwords.vim
-
-I am using two wrapper scripts to enable syntax highlighting. If you use the following syntax, it should be highlighted on wordpress.com:
-
-[code ruby]
-
-  def time
-    :now
-  end
-
-[end]
 
 
 TIPS
 
 Have a look at the key bindings in vimrc for some inspiration.
 
-Do :BundleInstall to update the plugins at any time :)
+Do :BundleInstall! to update the plugins at any time :)

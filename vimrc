@@ -20,7 +20,6 @@ Bundle "slim.vim"
 " integration
 Bundle "https://github.com/csexton/jekyll.vim.git"
 Bundle "https://github.com/tpope/vim-fugitive.git"
-Bundle "blogit.vim"
 Bundle "gist.vim"
 
 " navigation
@@ -37,6 +36,7 @@ Bundle "https://github.com/vim-scripts/Conque-Shell.git"
 Bundle "https://github.com/vim-scripts/Align.git"
 Bundle "https://github.com/vim-scripts/AnsiEsc.vim.git"
 Bundle "https://github.com/vim-scripts/vimwiki.git"
+Bundle "https://github.com/ervandew/screen.git"
 
 
 
@@ -88,20 +88,34 @@ set incsearch
 " MAPPINGS
 map <F1> :FufFile<CR>
 map <F2> :FufBuffer<CR>
-map <F3> :FufBufferTag<CR>
-map <F4> :FufDir<CR>
+map <F3> :FufDir<CR>
+map <F4> :TlistOpen<CR>
 
 map <F5> :NERDTreeToggle<CR>
-map <F6> :ConqueTerm zsh
+map <F6> :ConqueTerm<Space>
 map <F7> :set fileencoding=
 map <F8> :set filetype=
 
-map <F9> :Blogit new<CR>
-map <F10> :Blogit ls<CR>
-map <F11> :Blogit commit<CR>:Blogit push<CR>
+"map <F9> 
+"map <F10> 
+map <F11> :FufFile ~/dev/jostein.be/_posts/<CR>
 map <F12> :Gist 
 
 map <C-Space> :!
+
+inoremap "" ""<Left>
+inoremap () ()<Left>
+inoremap [] []<Left>
+inoremap {} {}<Left>
+inoremap /* /*<Space><Space>*/<Left><Left><Left>
+
+
+" Conque term
+
+let g:ConqueTerm_InsertOnEnter = 0 " Go straight to insert mode
+let g:ConqueTerm_CWInsert = 0      " Allow C-w in insert mode
+let g:ConqueTerm_ReadUnfocused = 1 " Read while unfocused too
+let g:ConqueTerm_CloseOnEnd = 0
 
 
 
@@ -124,7 +138,7 @@ let g:html_ignore_folding = 1
 let g:html_use_encoding = "utf8"
 let g:use_xhtml = 1
 
-let g:jekyll_path = "~/code_blog"
+let g:jekyll_path = "~/dev/jostein.be"
 
 let blogit_unformat='$HOME/.vim/support/wp2md'
 let blogit_format='$HOME/.vim/support/md2wp'
