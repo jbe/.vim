@@ -97,7 +97,7 @@ map <F7> :set fileencoding=
 map <F8> :set filetype=
 
 "map <F9> 
-"map <F10> 
+map <F10> :JekyllPost 
 map <F11> :FufFile ~/dev/jostein.be/_posts/<CR>
 map <F12> :Gist 
 
@@ -140,6 +140,4 @@ let g:use_xhtml = 1
 
 let g:jekyll_path = "~/dev/jostein.be"
 
-let blogit_unformat='$HOME/.vim/support/wp2md'
-let blogit_format='$HOME/.vim/support/md2wp'
 let g:gist_clip_command = 'xclip -selection clipboard'
