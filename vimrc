@@ -5,11 +5,15 @@
 "
 
 
+set nocompatible      " Vi iMproved
+filetype off          " for vundle
+
 " vundle bundles:
-set rtp+=~/.vim/vundle.git/ 
+set rtp+=~/.vim/bundle/vundle/ 
 call vundle#rc()
 
 " libraries
+Bundle 'gmarik/vundle'
 Bundle "https://github.com/vim-scripts/L9.git"
 
 " language support
@@ -18,8 +22,8 @@ Bundle "https://github.com/robgleeson/vim-markdown-preview.git"
 Bundle "slim.vim"
 
 " integration
-Bundle "https://github.com/csexton/jekyll.vim.git"
-Bundle "https://github.com/tpope/vim-fugitive.git"
+Bundle "csexton/jekyll.vim.git"
+Bundle "tpope/vim-fugitive.git"
 Bundle "gist.vim"
 
 " navigation
@@ -37,13 +41,10 @@ Bundle "https://github.com/vim-scripts/Align.git"
 Bundle "https://github.com/vim-scripts/AnsiEsc.vim.git"
 Bundle "https://github.com/vim-scripts/vimwiki.git"
 Bundle "https://github.com/ervandew/screen.git"
+Bundle "https://github.com/vim-scripts/quickfonts.vim.git"
 
+filetype plugin indent on " after vundle
 
-
-" BASIC
-set nocompatible                    " Vim settings -- not Vi. Must be first.
-filetype on                         " filetype detection
-filetype plugin on                  " allow ftplugins
 
 
 " APPEARANCE
@@ -102,6 +103,9 @@ map <F11> :FufFile ~/dev/jostein.be/_posts/<CR>
 map <F12> :Gist 
 
 map <C-Space> :!
+
+map + :QuickFontBigger<CR>
+map - :QuickFontSmaller<CR>
 
 inoremap "" ""<Left>
 inoremap () ()<Left>
