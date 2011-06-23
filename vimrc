@@ -14,34 +14,34 @@ call vundle#rc()
 
 " libraries
 Bundle 'gmarik/vundle'
-Bundle "https://github.com/vim-scripts/L9.git"
+Bundle 'vim-scripts/L9'
 
 " language support
-Bundle "https://github.com/plasticboy/vim-markdown.git"
-Bundle "https://github.com/robgleeson/vim-markdown-preview.git"
+Bundle "plasticboy/vim-markdown"
+Bundle "robgleeson/vim-markdown-preview"
 Bundle "slim.vim"
 
 " integration
-Bundle "csexton/jekyll.vim.git"
-Bundle "tpope/vim-fugitive.git"
+Bundle "csexton/jekyll.vim"
+Bundle "tpope/vim-fugitive"
 Bundle "gist.vim"
 
 " navigation
-Bundle "https://github.com/scrooloose/nerdtree.git"
+Bundle "scrooloose/nerdtree"
 Bundle "taglist.vim"
-Bundle "https://github.com/majutsushi/tagbar.git"
-"Bundle "https://github.com/fholgado/minibufexpl.vim.git"
-Bundle "https://github.com/vim-scripts/FuzzyFinder.git"
+Bundle "majutsushi/tagbar"
+Bundle "vim-scripts/FuzzyFinder"
+"Bundle "fholgado/minibufexpl.vim"
 
 " useful
+Bundle "vim-scripts/Conque-Shell"
+Bundle "vim-scripts/Align"
+Bundle "vim-scripts/AnsiEsc.vim"
+Bundle "vim-scripts/vimwiki"
 Bundle "snipmate.vim"
-Bundle "https://github.com/flazz/vim-colorschemes.git"
-Bundle "https://github.com/vim-scripts/Conque-Shell.git"
-Bundle "https://github.com/vim-scripts/Align.git"
-Bundle "https://github.com/vim-scripts/AnsiEsc.vim.git"
-Bundle "https://github.com/vim-scripts/vimwiki.git"
-Bundle "https://github.com/ervandew/screen.git"
-Bundle "https://github.com/vim-scripts/quickfonts.vim.git"
+Bundle "flazz/vim-colorschemes"
+Bundle "ervandew/screen"
+Bundle "vim-scripts/quickfonts.vim"
 
 filetype plugin indent on " after vundle
 
