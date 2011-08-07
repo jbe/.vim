@@ -2,5 +2,6 @@
 passwords.vim
 sessions
 
-bundle
-!bundle/vundle
+bundle/*
+!bundle/vundle/
+!bundle/vundle/*
