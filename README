@@ -1,12 +1,13 @@
 
 TO INSTALL:
 
-1. Fork this repo
-2. Paste this in a terminal:
+1. Fork this repo on Github
+2. Remove or move your old .vimrc and .gvimrc
+3. Paste this into a terminal:
 
 read -p "Enter your name on Github:"
 cd ~
-git clone http://github.com/$REPLY/.vim.git
+git clone git@github.com:$REPLY/.vim.git
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 cd ~/.vim
@@ -51,3 +52,6 @@ TIPS
 Have a look at the key bindings in vimrc.
 Mess around with plugins.vim.
 Live without reservations.
+
+Copyright 2011 Jostein Berre Eliassen where relevant.
+Released under the MIT license.
