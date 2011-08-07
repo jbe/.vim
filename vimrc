@@ -13,12 +13,8 @@ source ~/.vim/functions.vim
 
 " APPEARANCE
 syntax enable
-if has('gui_running')
-  set background=light
-else
-  set background=dark
-endif
-color solarized
+set background=dark
+colorscheme solarized
 set ruler		                    " always show cursor position
 set showmode		                " display curent mode
 set showcmd		                    " display incomplete commands
