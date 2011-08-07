@@ -15,8 +15,8 @@ source ~/.vim/functions.vim
 " APPEARANCE
 let g:solarized_termcolors=256
 syntax enable
-set background=dark
 colorscheme solarized
+set background=dark
 set ruler		                    " always show cursor position
 set showmode		                " display curent mode
 set showcmd		                    " display incomplete commands
