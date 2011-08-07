@@ -15,13 +15,12 @@ Bundle 'gmarik/vundle'
 
 " language support
 Bundle "plasticboy/vim-markdown"
-Bundle "robgleeson/hammer"
-Bundle "slim.vim"
+Bundle "robgleeson/hammer.vim"
 
 " integration
 Bundle "csexton/jekyll.vim"
 Bundle "tpope/vim-fugitive"
-Bundle "gist.vim"
+Bundle "Gist.vim"
 
 " navigation
 Bundle "scrooloose/nerdtree"
@@ -34,7 +33,7 @@ Bundle "vim-scripts/Conque-Shell"
 Bundle "vim-scripts/Align"
 Bundle "vim-scripts/AnsiEsc.vim"
 Bundle "vim-scripts/vimwiki"
-Bundle "snipmate.vim"
+Bundle "msanders/snipmate.vim"
 Bundle "flazz/vim-colorschemes"
 Bundle "ervandew/screen"
 Bundle "vim-scripts/quickfonts.vim"
