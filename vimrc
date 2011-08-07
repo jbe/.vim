@@ -6,12 +6,14 @@
 
 
 set nocompatible " Vim rather than Vi
+set t_Co=256 " force 256 colors in terminal
 
 source ~/.vim/plugins.vim
 source ~/.vim/functions.vim
 
 
 " APPEARANCE
+let g:solarized_termcolors=256
 syntax enable
 set background=dark
 colorscheme solarized
