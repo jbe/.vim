@@ -29,12 +29,13 @@ Bundle "majutsushi/tagbar"
 "Bundle "fholgado/minibufexpl.vim"
 
 " useful
+Bundle "flazz/vim-colorschemes"
+Bundle "altercation/vim-colors-solarized"
 Bundle "vim-scripts/Conque-Shell"
 Bundle "vim-scripts/Align"
 Bundle "vim-scripts/AnsiEsc.vim"
 Bundle "vim-scripts/vimwiki"
 Bundle "msanders/snipmate.vim"
-Bundle "flazz/vim-colorschemes"
 Bundle "ervandew/screen"
 Bundle "vim-scripts/quickfonts.vim"
 

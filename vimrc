@@ -12,8 +12,13 @@ source ~/.vim/functions.vim
 
 
 " APPEARANCE
-color jellybeans  " syntax highlighting
-syntax on         " 
+syntax enable
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+color solarized
 set ruler		                    " always show cursor position
 set showmode		                " display curent mode
 set showcmd		                    " display incomplete commands
