@@ -1,11 +1,11 @@
-
 TO INSTALL:
 
 1. Fork this repo on Github
 2. Remove or move your old .vimrc and .gvimrc
 3. Paste this into a terminal:
 
-read -p "Enter your name on Github:"
+echo "Enter your name on Github:"
+read REPLY
 cd ~
 git clone git@github.com:$REPLY/.vim.git
 ln -s ~/.vim/vimrc ~/.vimrc
