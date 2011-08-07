@@ -4,6 +4,8 @@
 "  Jostein B. Eliassen
 "
 
+silent !export GIT_SSL_NO_VERIFY=true
+
 
 set nocompatible      " Vi iMproved
 filetype off          " for vundle
@@ -14,11 +16,11 @@ call vundle#rc()
 
 " libraries
 Bundle 'gmarik/vundle'
-Bundle 'vim-scripts/L9'
+Bundle 'clones/vim-l9'
 
 " language support
 Bundle "plasticboy/vim-markdown"
-Bundle "robgleeson/vim-markdown-preview"
+Bundle "robgleeson/hammer"
 Bundle "slim.vim"
 
 " integration
