@@ -4,14 +4,14 @@ TO INSTALL:
 2. Remove or move your old .vimrc and .gvimrc
 3. Paste this into a terminal:
 
-echo "Enter your name on Github:"
-read REPLY
+
 cd ~
-git clone git@github.com:$REPLY/.vim.git
+git clone git@github.com:`echo "Enter your name on Github:"; read REPLY; echo $REPLY`/.vim.git
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 cd ~/.vim
 vim +BundleInstall +q
+
 
 
 
