@@ -1,37 +1,44 @@
 
 TO INSTALL:
 
+1. Fork this repo
+2. Paste this in a terminal:
+
+read -p "Enter your name on Github:"
 cd ~
-git clone http://github.com/jbe/.vim.git
+git clone http://github.com/$REPLY/.vim.git
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 cd ~/.vim
 vim +BundleInstall +q
 
 
+
 FEATURES
 
 * My opinions
+* Graceful degradation
+* Plugins managed by Vundle
 
 * Syntax support
   - Markdown (and markdown-preview)
   - CoffeeScript
-  - Slim templates
   - ANSI escaped files
 
 * Integration
   - Git (fugitive.vim)
   - Jekyll blogging (jekyll.vim)
-  - Hithub gists (gist.vim)
+  - Github gists (gist.vim)
 
 * Useful plugins
   - FuzzyFinder
   - NERDTree
   - Taglist
-  - Tagbar
   - Align
   - Tab completion (snipmate.vim)
   - ConqueShell
+
+And much more.
 
 
 REQUIREMENTS
@@ -40,9 +47,7 @@ Exuberant ctags (for taglist)
 $ sudo apt-get install ctags
 
 
-
 TIPS
-
-Have a look at the key bindings in vimrc for some inspiration.
-
-Do :BundleInstall! to update the plugins at any time :)
+Have a look at the key bindings in vimrc.
+Mess around with plugins.vim.
+Live without reservations.
