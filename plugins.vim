@@ -15,7 +15,6 @@ Bundle 'gmarik/vundle'
 
 " language support
 Bundle "plasticboy/vim-markdown"
-Bundle "robgleeson/hammer.vim"
 
 " integration
 Bundle "csexton/jekyll.vim"

@@ -1,6 +1,7 @@
 .netrwhist
 passwords.vim
 sessions
+.swp
 
 bundle/*
 !bundle/vundle/
