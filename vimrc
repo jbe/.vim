@@ -64,8 +64,6 @@ map <F12> :Gist
 
 map <C-Space> :!
 
-map + :QuickFontBigger<CR>
-map - :QuickFontSmaller<CR>
 
 inoremap "" ""<Left>
 inoremap () ()<Left>

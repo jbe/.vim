@@ -7,7 +7,7 @@ call vundle#rc()
 
 if has('float')
   Bundle 'clones/vim-l9'
-  Bundle "vim-scripts/FuzzyFinder"
+  Bundle "FuzzyFinder"
 endif
 
 " libraries
@@ -15,7 +15,6 @@ Bundle 'gmarik/vundle'
 
 " language support
 Bundle "plasticboy/vim-markdown"
-Bundle "robgleeson/hammer.vim"
 
 " integration
 Bundle "csexton/jekyll.vim"
@@ -31,12 +30,11 @@ Bundle "majutsushi/tagbar"
 " useful
 Bundle "flazz/vim-colorschemes"
 Bundle "altercation/vim-colors-solarized"
-Bundle "vim-scripts/Conque-Shell"
-Bundle "vim-scripts/Align"
-Bundle "vim-scripts/AnsiEsc.vim"
-Bundle "vim-scripts/vimwiki"
+Bundle "Conque-Shell"
+Bundle "Align"
+Bundle "AnsiEsc.vim"
+Bundle "vimwiki"
 Bundle "msanders/snipmate.vim"
 Bundle "ervandew/screen"
-Bundle "vim-scripts/quickfonts.vim"
 
 filetype plugin indent on " after vundle
