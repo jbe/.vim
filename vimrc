@@ -10,6 +10,7 @@ set t_Co=256 " force 256 colors in terminal
 
 source ~/.vim/plugins.vim
 source ~/.vim/functions.vim
+source ~/.vim/autocommands.vim
 
 
 " APPEARANCE
