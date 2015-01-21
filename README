@@ -1,37 +1,27 @@
 
-This configuration is a bit out of date. For a nice default setup, i recommend having a look at Vimified.
+This is my good old Vim setup. For a flashier but more engineered alternative, have google for spf13-vim or Vimified.
 
-https://github.com/zaiste/vimified
-
-
-
-Otherwise..
 
 TO INSTALL:
 
-1. Fork this repo on Github
-2. Remove or move your old .vimrc and .gvimrc
-3. Paste this into a terminal:
+Clone repo to ~/.vim (fork first if you'd like)
 
-cd ~
-ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.vim/gvimrc ~/.gvimrc
-echo "Enter your name on Github:"; git clone git@github.com:`read REPLY; echo $REPLY`/.vim.git
+    ln -s ~/.vim/vimrc ~/.vimrc
+    ln -s ~/.vim/gvimrc ~/.gvimrc
 
-4. Paste this into a terminal:
-
-vim +BundleInstall +q
+    vim +BundleInstall +q
 
 
 
 
 FEATURES
 
-* My opinions
-* Graceful degradation
-* Plugins managed by Vundle
+* My great opinions
+* Quite simple config file
+* Mostly graceful degradation
+* Plugins via Vundle
 
-* Syntax support
+* Added syntax support
   - Markdown (and markdown-preview)
   - CoffeeScript
   - ANSI escaped files
@@ -49,19 +39,22 @@ FEATURES
   - Tab completion (snipmate.vim)
   - ConqueShell
 
-And much more.
+And more.
 
 
-REQUIREMENTS
+SOFT REQUIREMENTS:
 
 Exuberant ctags (for taglist)
 $ sudo apt-get install ctags
 
 
 TIPS
+
 Have a look at the key bindings in vimrc.
 Mess around with plugins.vim.
-Live without reservations.
+
+
+---
 
 Copyright 2011 Jostein Berre Eliassen where relevant.
 Released under the MIT license.
