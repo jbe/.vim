@@ -66,11 +66,11 @@ map <F12> :Gist
 map <C-Space> :!
 
 
-inoremap "" ""<Left>
-inoremap () ()<Left>
-inoremap [] []<Left>
-inoremap {} {}<Left>
-inoremap /* /*<Space><Space>*/<Left><Left><Left>
+"inoremap "" ""<Left>
+"inoremap () ()<Left>
+"inoremap [] []<Left>
+"inoremap {} {}<Left>
+"inoremap /* /*<Space><Space>*/<Left><Left><Left>
 
 " Conque term
 
