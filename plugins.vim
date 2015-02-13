@@ -5,16 +5,14 @@ filetype off  " for vundle
 set rtp+=~/.vim/bundle/vundle/ 
 call vundle#rc()
 
-if has('float')
-  Bundle 'clones/vim-l9'
-  Bundle "FuzzyFinder"
-endif
-
 " libraries
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle'
 
 " language support
 Bundle "plasticboy/vim-markdown"
+Bundle "scrooloose/syntastic"
+Bundle "zah/nimrod.vim"
+Bundle 'kchmck/vim-coffee-script'
 
 " integration
 Bundle "csexton/jekyll.vim"
@@ -26,6 +24,11 @@ Bundle "scrooloose/nerdtree"
 Bundle "taglist.vim"
 Bundle "majutsushi/tagbar"
 "Bundle "fholgado/minibufexpl.vim"
+
+if has('float')
+  Bundle 'clones/vim-l9'
+  Bundle "FuzzyFinder"
+endif
 
 " useful
 Bundle "flazz/vim-colorschemes"
