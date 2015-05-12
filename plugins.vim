@@ -13,6 +13,7 @@ Bundle "plasticboy/vim-markdown"
 Bundle "scrooloose/syntastic"
 Bundle "zah/nimrod.vim"
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'zah/nimrod.vim'
 
 " integration
 Bundle "csexton/jekyll.vim"
