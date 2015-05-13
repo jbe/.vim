@@ -1,5 +1,5 @@
 
-This is my good old Vim setup. For a flashier but more engineered alternative, have google for spf13-vim or Vimified.
+This is my good old Vim setup, that has evolved over the years. I don't usually clone this repo manually -- installation is handled by the dotfiles installer.
 
 
 TO INSTALL:
@@ -9,43 +9,22 @@ Clone repo to ~/.vim (fork first if you'd like)
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
-    vim +BundleInstall +q
-
-
+    vim +PlugInstall +q
 
 
 FEATURES
 
 * My great opinions
-* Quite simple config file
-* Mostly graceful degradation
-* Plugins via Vundle
+* Relatively simple file
+* Mostly graceful degradation of features
 
-* Added syntax support
-  - Markdown (and markdown-preview)
-  - CoffeeScript
-  - ANSI escaped files
+Syntax support: Markdown, CoffeeScript, Jade, Nim
 
-* Integration
-  - Git (fugitive.vim)
-  - Jekyll blogging (jekyll.vim)
-  - Github gists (gist.vim)
+Integration: Git (fugitive.vim) Jekyll (jekyll.vim) Github gists (gist.vim)
 
-* Useful plugins
-  - FuzzyFinder
-  - NERDTree
-  - Taglist
-  - Align
-  - Tab completion (snipmate.vim)
-  - ConqueShell
+Other plugins: FuzzyFinder NERDTree Taglist Align snipmate.vim ConqueShell
 
-And more.
-
-
-SOFT REQUIREMENTS:
-
-Exuberant ctags (for taglist)
-$ sudo apt-get install ctags
++ Much more
 
 
 TIPS
