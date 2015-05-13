@@ -3,6 +3,4 @@ passwords.vim
 sessions
 .swp
 
-bundle/*
-!bundle/vundle/
-!bundle/vundle/*
+plugged/*

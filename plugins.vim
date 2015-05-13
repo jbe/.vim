@@ -1,44 +1,46 @@
 
 filetype off  " for vundle
 
-" vundle bundles:
-set rtp+=~/.vim/bundle/vundle/ 
-call vundle#rc()
+" vim-plug
+
+call plug#begin('~/.vim/plugged')
 
 " libraries
-Bundle 'gmarik/Vundle'
+Plug 'gmarik/Vundle'
 
 " language support
-Bundle "plasticboy/vim-markdown"
-Bundle "scrooloose/syntastic"
-Bundle "zah/nimrod.vim"
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'zah/nimrod.vim'
+Plug 'plasticboy/vim-markdown'
+Plug 'scrooloose/syntastic'
+Plug 'zah/nimrod.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'digitaltoad/vim-jade'
 
 " integration
-Bundle "csexton/jekyll.vim"
-Bundle "tpope/vim-fugitive"
-Bundle "Gist.vim"
+Plug 'csexton/jekyll.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'Gist.vim'
 
 " navigation
-Bundle "scrooloose/nerdtree"
-Bundle "taglist.vim"
-Bundle "majutsushi/tagbar"
-"Bundle "fholgado/minibufexpl.vim"
+Plug 'scrooloose/nerdtree'
+Plug 'taglist.vim'
+Plug 'majutsushi/tagbar'
+"Plug 'fholgado/minibufexpl.vim'
 
 if has('float')
-  Bundle 'clones/vim-l9'
-  Bundle "FuzzyFinder"
+  Plug 'clones/vim-l9'
+  Plug 'FuzzyFinder'
 endif
 
 " useful
-Bundle "flazz/vim-colorschemes"
-Bundle "altercation/vim-colors-solarized"
-Bundle "Conque-Shell"
-Bundle "Align"
-Bundle "AnsiEsc.vim"
-Bundle "vimwiki"
-Bundle "msanders/snipmate.vim"
-Bundle "ervandew/screen"
+Plug 'flazz/vim-colorschemes'
+Plug 'altercation/vim-colors-solarized'
+Plug 'Conque-Shell'
+Plug 'Align'
+Plug 'AnsiEsc.vim'
+Plug 'vimwiki'
+Plug 'msanders/snipmate.vim'
+Plug 'ervandew/screen'
 
-filetype plugin indent on " after vundle
+call plug#end()
+
+filetype plugin indent on " after plugs
