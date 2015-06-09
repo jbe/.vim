@@ -26,4 +26,3 @@ autocmd FileType ruby setlocal autoindent expandtab shiftwidth=2 tabstop=2 softt
 
 autocmd FileType haml setlocal autoindent expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
-autocmd BufRead,BufNewFile   *.nim set ft=nimrod
