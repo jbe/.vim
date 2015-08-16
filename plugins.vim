@@ -3,7 +3,7 @@ call plug#begin('~/.vim/plugged')
 " UI
 Plug 'nanotech/jellybeans.vim' " jellybeans color theme
 Plug 'bling/vim-airline' " better statusline
-Plug 'bling/vim-bufferline' " show open buffers in airline
+"Plug 'bling/vim-bufferline' " show open buffers in airline
 Plug 'airblade/vim-gitgutter' " visualizes shows changes per line
 Plug 'sjl/gundo.vim' " undo history browser
 Plug 'kien/ctrlp.vim'

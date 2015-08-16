@@ -4,9 +4,13 @@
 "  Jostein Berre Eliassen
 "
 
-set nocompatible    " two magic words
-set hidden          " allow hiding unsaved files
+set nocompatible    " not care about vi compat
 set t_Co=256        " force 256 colors
+"set hidden         " allow hiding unsaved files
+
+set nobackup        " no backup files
+set nowritebackup   " only in case you don't want a backup file while editing
+set noswapfile      " no swap files
 
 set ruler		    " always show cursor position
 set showmode		" display curent mode
