@@ -5,6 +5,11 @@ filetype off  " for vundle
 
 call plug#begin('~/.vim/plugged')
 
+" work-related
+Plug 'ngmy/vim-rubocop'
+Plug 'tpope/vim-rails'
+Plug 'slim-template/vim-slim'
+
 " libraries
 Plug 'gmarik/Vundle'
 
