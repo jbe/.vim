@@ -1,7 +1,6 @@
 
 This is my good old Vim setup, that has evolved over the years. I don't usually clone this repo manually -- installation is handled by the dotfiles installer.
 
-
 TO INSTALL:
 
 Clone repo to ~/.vim (fork first if you'd like)
@@ -11,27 +10,12 @@ Clone repo to ~/.vim (fork first if you'd like)
 
     vim +PlugInstall +q
 
-
 FEATURES
 
-* My great opinions
-* Relatively simple file
-* Mostly graceful degradation of features
-
-Syntax support: Markdown, CoffeeScript, Jade, Nim
-
-Integration: Git (fugitive.vim) Jekyll (jekyll.vim) Github gists (gist.vim)
-
-Other plugins: FuzzyFinder NERDTree Taglist Align snipmate.vim ConqueShell
-
+* Many UI/workflow enhancements
+* Understandable file structure
+* Language support
 + Much more
-
-
-TIPS
-
-Have a look at the key bindings in vimrc.
-Mess around with plugins.vim.
-
 
 ---
 
