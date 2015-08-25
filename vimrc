@@ -18,6 +18,7 @@ set showcmd		    " display incomplete commands
 set nu			    " show line numbers
 
 source ~/.vim/plugins.vim       " Plugin list
+source ~/.vim/platform.vim      " platform-specific config
 source ~/.vim/functions.vim     " User functions
 source ~/.vim/autocommands.vim  " per file type settings
 source ~/.vim/mappings.vim      " custom key mappings
