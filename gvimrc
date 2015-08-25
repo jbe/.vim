@@ -3,6 +3,10 @@ color jellybeans
 
 set gfn=DejaVu\ Sans\ Mono\ 12
 
+if has("gui_macvim")
+  set gfn=Menlo:h16
+endif
+
 set guioptions-=T " no toolbar
 set guioptions-=r " no right scrollbar
 set guioptions-=L " no left scrollbar
