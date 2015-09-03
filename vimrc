@@ -50,6 +50,8 @@ set ttyfast		                    " smoother output, they claim
 " SEARCH
 set ignorecase
 set incsearch
+set hlsearch
+hi Search ctermbg=White ctermfg=Black
 
 " TECHNICAL
 set mouse=a
