@@ -8,7 +8,7 @@ Clone repo to ~/.vim (fork first if you'd like)
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
-    vim +PlugInstall +q
+    vim +PlugInstall +qa
 
 FEATURES
 
