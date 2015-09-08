@@ -58,5 +58,5 @@ set fileencoding=utf-8
 set termencoding=utf-8
 
 " uncomment in case of nazi takeover:
-"highlight RedundantWhitespace ctermbg=red guibg=red
-"match RedundantWhitespace /\s\+$\| \+\ze\t/
+highlight RedundantWhitespace ctermbg=red guibg=red
+match RedundantWhitespace /\s\+$\| \+\ze\t/
