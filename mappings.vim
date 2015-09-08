@@ -2,6 +2,8 @@
 map <C-N> :NERDTreeToggle<CR>
 map <C-T> :TagbarOpenAutoClose<CR>
 
+nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
+
 map <F1> :sp ~/.vim/
 map <F2> :sp ~/.dotfiles/
 map <F3> :sp ~/
