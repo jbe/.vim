@@ -6,6 +6,7 @@
 
 set nocompatible    " not care about vi compat
 set t_Co=256        " force 256 colors
+set re=1            " use new regexp engine
 "set hidden         " allow hiding unsaved files
 
 set nobackup        " no backup files
@@ -64,5 +65,5 @@ set list
 set listchars=tab:▸·,trail:·,nbsp:●
 
 " uncomment in case of nazi takeover:
-highlight RedundantWhitespace ctermbg=red guibg=red
-match RedundantWhitespace /\s\+$\| \+\ze\t/
+"highlight RedundantWhitespace ctermbg=red guibg=red
+"match RedundantWhitespace /\s\+$\| \+\ze\t/
