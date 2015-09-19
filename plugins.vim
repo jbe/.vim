@@ -27,6 +27,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'zah/nimrod.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'digitaltoad/vim-jade'
+Plug 'fasterthanlime/ooc.vim'
 
 " Integration
 Plug 'tpope/vim-fugitive'
