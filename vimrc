@@ -13,6 +13,11 @@ set nobackup        " no backup files
 set nowritebackup   " only in case you don't want a backup file while editing
 set noswapfile      " no swap files
 
+set undofile                " Save undo's after file closes
+set undodir=$HOME/.vim/undo " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
+
 set ruler           " always show cursor position
 set showmode        " display curent mode
 set showcmd         " display incomplete commands

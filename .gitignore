@@ -1,6 +1,5 @@
 .netrwhist
 passwords.vim
 sessions
-.swp
-
-plugged/*
+undo/%*
+plugged
