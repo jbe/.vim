@@ -18,13 +18,7 @@ set undodir=$HOME/.vim/undo " where to save undo histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " number of lines to save for undo
 
-set ruler           " always show cursor position
-set showmode        " display curent mode
-set showcmd         " display incomplete commands
-set nu              " show line numbers
-
 source ~/.vim/plugins.vim       " Plugin list
-source ~/.vim/platform.vim      " platform-specific config
 source ~/.vim/functions.vim     " User functions
 source ~/.vim/autocommands.vim  " per file type settings
 source ~/.vim/mappings.vim      " custom key mappings
@@ -34,6 +28,20 @@ source ~/.vim/tool_config.vim   " tool-specific config
 " APPEARANCE
 syntax enable
 colorscheme jellybeans
+set ruler           " always show cursor position
+set showmode        " display curent mode
+set showcmd         " display incomplete commands
+set number          " show line numbers
+set list " Visual warnings for unsafe characters
+set listchars=tab:▸·,trail:·,nbsp:●
+
+" INTERFACE
+set wildmenu
+set wildignore=.keep,coverage,node_modules,tmp
+set wrap lbr                    " break by words
+set backspace=indent,eol,start  " liberal backspacing in insert mode
+set showmatch                   " show matching brackets when hovering
+set viminfo='25,\"50,n~/.vim/viminfo
 
 " DEFAULT TAB STOPS & INDENTING
 set tabstop=4                   " tab stops
@@ -44,10 +52,6 @@ set autoindent
 set smartindent
 set expandtab
 set smarttab
-
-" ERGONOMICS
-set backspace=indent,eol,start  " liberal backspacing in insert mode
-set showmatch                   " show matching brackets when hovering
 
 set history=50
 set smartcase
@@ -64,11 +68,3 @@ set mouse=a
 set encoding=utf-8
 set fileencoding=utf-8
 set termencoding=utf-8
-
-" Visual warnings for unsafe characters
-set list
-set listchars=tab:▸·,trail:·,nbsp:●
-
-" uncomment in case of nazi takeover:
-"highlight RedundantWhitespace ctermbg=red guibg=red
-"match RedundantWhitespace /\s\+$\| \+\ze\t/

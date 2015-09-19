@@ -6,3 +6,6 @@ let g:html_use_encoding = "utf8"
 let g:use_xhtml = 1
 
 let g:gist_clip_command = 'xclip -selection clipboard'
+
+let NERDTreeIgnore = ['^\.git$', '\.swp$']
+let NERDTreeShowHidden = 1
