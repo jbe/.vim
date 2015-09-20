@@ -18,15 +18,16 @@ set undodir=$HOME/.vim/undo " where to save undo histories
 set undolevels=1000         " How many undos
 set undoreload=10000        " number of lines to save for undo
 
-source ~/.vim/plugins.vim       " Plugin list
-source ~/.vim/functions.vim     " User functions
-source ~/.vim/autocommands.vim  " per file type settings
-source ~/.vim/mappings.vim      " custom key mappings
-source ~/.vim/tool_config.vim   " tool-specific config
+source ~/.vim/plugins.vim
+source ~/.vim/initialize.vim
+source ~/.vim/autocommands.vim
+source ~/.vim/mappings.vim
+source ~/.vim/tool_config.vim
 
 
 " APPEARANCE
 syntax enable
+set background=dark
 colorscheme jellybeans
 set ruler           " always show cursor position
 set showmode        " display curent mode
@@ -41,7 +42,7 @@ set wildignore=.keep,coverage,node_modules,tmp
 set wrap lbr                    " break by words
 set backspace=indent,eol,start  " liberal backspacing in insert mode
 set showmatch                   " show matching brackets when hovering
-set viminfo='25,\"50,n~/.vim/viminfo
+set viminfo='25,\"50,n~/.vim/.viminfo
 
 " DEFAULT TAB STOPS & INDENTING
 set tabstop=4                   " tab stops
@@ -60,8 +61,8 @@ set ttyfast                     " smoother output, they claim
 " SEARCH
 set ignorecase
 set incsearch
-set hlsearch
-hi Search ctermbg=White ctermfg=Black
+"set hlsearch
+hi Search ctermbg=Yellow ctermfg=Black
 
 " TECHNICAL
 set mouse=a
