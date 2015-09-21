@@ -24,7 +24,8 @@ map <leader>t  :CtrlPClearCache<cr>\|:CtrlP test<cr>
 map <leader>p :set paste<CR>"*p:set nopaste<cr>
 map <leader><leader>p :set paste<CR>o<ESC>"*p:set nopaste<cr>
 
-map <C-N> :NERDTreeToggle<CR>
+map <leader><C-N> :NERDTreeToggle<CR>
+map <C-N> :NERDTreeToggle %<CR>
 map <C-T> :TagbarOpenAutoClose<CR>
 
 nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
