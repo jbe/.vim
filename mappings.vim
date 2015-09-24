@@ -16,6 +16,7 @@ map <leader>gw :Gwrite<CR>
 map <leader>gr :Gread<CR>
 map <leader>gl :Glog<CR>
 map <leader>gb :Gblame<CR>
+map <leader>gp :Gpush<CR>
 map <leader>gg :Gbrowse<CR>
 map <leader>gv :Gitv<CR>
 
