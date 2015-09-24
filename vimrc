@@ -34,7 +34,7 @@ set ruler           " always show cursor position
 set showmode        " display curent mode
 set showcmd         " display incomplete commands
 set number          " show line numbers
-set list " Visual warnings for unsafe characters
+set list            " visual warnings for unsafe characters
 set listchars=tab:▸·,trail:·,nbsp:●
 
 " INTERFACE
