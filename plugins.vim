@@ -35,6 +35,7 @@ Plug 'fasterthanlime/ooc.vim', { 'for': 'ooc' }
 
 " Integration
 Plug 'tpope/vim-fugitive'
+Plug 'gregsexton/gitv'
 Plug 'tpope/vim-eunuch'
 Plug 'Gist.vim'
 Plug 'airblade/vim-gitgutter' " visualizes shows changes per line
@@ -42,7 +43,8 @@ Plug 'ervandew/screen'
 "Plug 'csexton/jekyll.vim'
 
 " Tools
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-dispatch'
+Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar',   { 'on':  'TagbarOpenAutoClose' }
 "Plug 'taglist.vim'
 
