@@ -7,7 +7,7 @@ vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 map <leader>d :Dispatch 
-map <leader>m :make 
+map <leader>m :Make<CR>
 
 " git
 map <leader>gs :Gstatus<CR>
