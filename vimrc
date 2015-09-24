@@ -29,6 +29,7 @@ source ~/.vim/tool_config.vim
 syntax enable
 set background=dark
 colorscheme jellybeans
+set laststatus=2    " always show statusline
 set ruler           " always show cursor position
 set showmode        " display curent mode
 set showcmd         " display incomplete commands
