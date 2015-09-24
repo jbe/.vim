@@ -6,6 +6,17 @@ inoremap <Up> <C-o>gk
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
+" git
+map <leader>gs :Gstatus<CR>
+map <leader>gc :Gcommit<CR>
+map <leader>gw :Gwrite<CR>
+map <leader>gr :Gread<CR>
+map <leader>gl :Glog<CR>
+map <leader>gb :Gblame<CR>
+map <leader>gg :Gbrowse<CR>
+map <leader>gv :Gitv<CR>
+
+" rails
 map <leader>c  :CtrlPTag<cr>
 map <leader>m  :CtrlPMRU<cr>
 map <leader>f  :CtrlPClearCache<cr>\|:CtrlP<cr>
@@ -24,8 +35,7 @@ map <leader>t  :CtrlPClearCache<cr>\|:CtrlP test<cr>
 map <leader>p :set paste<CR>"*p:set nopaste<cr>
 map <leader><leader>p :set paste<CR>o<ESC>"*p:set nopaste<cr>
 
-map <leader><C-N> :NERDTreeToggle<CR>
-map <C-N> :NERDTreeToggle %<CR>
+map <C-N> :call NERDTreeToggleInCurDir()<CR>
 map <C-T> :TagbarOpenAutoClose<CR>
 
 nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
