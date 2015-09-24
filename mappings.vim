@@ -9,6 +9,7 @@ nmap ga <Plug>(EasyAlign)
 map <leader>d :Dispatch 
 map <leader>! :Dispatch! 
 map <leader>m :Make<CR>
+map <leader>ge :Btabedit 
 
 " git
 map <leader>gs :Gstatus<CR>
@@ -19,9 +20,11 @@ map <leader>gl :Glog<CR>
 map <leader>gb :Gblame<CR>
 map <leader>gp :Gpush<CR>
 map <leader>gg :Gbrowse<CR>
+map <leader>gd :Gvdiff<CR>
 map <leader>gv :Gitv<CR>
 
 " rails
+map <leader>x  :Rextract 
 map <leader>c  :CtrlPTag<cr>
 map <leader>f  :CtrlPClearCache<cr>\|:CtrlP<cr>
 map <leader>aa :CtrlPClearCache<cr>\|:CtrlP app/assets<cr>

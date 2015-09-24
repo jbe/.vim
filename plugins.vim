@@ -10,7 +10,9 @@ Plug 'kien/ctrlp.vim'
 
 " work-related
 Plug 'ngmy/vim-rubocop'
+Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rake'
 Plug 'slim-template/vim-slim'
 
 
