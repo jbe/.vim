@@ -6,6 +6,9 @@ inoremap <Up> <C-o>gk
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
+map <leader>d :Dispatch 
+map <leader>m :make 
+
 " git
 map <leader>gs :Gstatus<CR>
 map <leader>gc :Gcommit<CR>
@@ -18,7 +21,6 @@ map <leader>gv :Gitv<CR>
 
 " rails
 map <leader>c  :CtrlPTag<cr>
-map <leader>m  :CtrlPMRU<cr>
 map <leader>f  :CtrlPClearCache<cr>\|:CtrlP<cr>
 map <leader>aa :CtrlPClearCache<cr>\|:CtrlP app/assets<cr>
 map <leader>ac :CtrlPClearCache<cr>\|:CtrlP app/controllers<cr>
