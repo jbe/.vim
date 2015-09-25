@@ -37,6 +37,7 @@ nmap <leader>!  :Dispatch!
 nmap <leader>m  :Make<CR>
 
 " git
+nmap <leader><leader>g :Git 
 nmap <leader>gs :Gstatus<CR>
 nmap <leader>gc :Gcommit<CR>
 nmap <leader>gw :Gwrite<CR>
@@ -62,12 +63,14 @@ nmap <leader>rp :CtrlPClearCache<CR>\|:CtrlP public<CR>
 nmap <leader>rs :CtrlPClearCache<CR>\|:CtrlP spec<CR>
 nmap <leader>rt :CtrlPClearCache<CR>\|:CtrlP test<CR>
 
-" browsers
+" browsers & toggling
 nnoremap <silent> <C-n> :call NERDTreeToggleInCurDir()<CR>
 nnoremap <silent> <C-t> :TagbarOpenAutoClose<CR>
 nmap <leader>cc :CtrlP<CR>
 nmap <leader>ct :CtrlPTag<CR>
 nmap <leader>cr :CtrlPClearCache<CR>:CtrlP<CR>
+nmap <silent> <leader>l :call ToggleLocationList()<CR>
+nmap <silent> <leader>q :call ToggleQuickfixList()<CR>
 
 " edit shortcuts
 nmap <leader>ev :tabe ~/.vim/

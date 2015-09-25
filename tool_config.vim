@@ -10,10 +10,12 @@ let g:ScreenShellTmuxInitArgs = '-2'
 let g:gist_clip_command = 'xclip -selection clipboard'
 
 let NERDTreeIgnore = ['^\.git$', '\.swp$']
-let NERDTreeShowHidden = 1
+let NERDTreeShowHidden = 0
 
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_enable_signs = 1
 
 let g:notes_directories = ['~/me/notes']
+
+let g:toggle_list_no_mappings = 1

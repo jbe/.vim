@@ -23,6 +23,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/goyo.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'keith/investigate.vim'
+Plug 'milkypostman/vim-togglelist'
 "Plug 'MarcWeber/vim-addon-mw-utils' " for snipmate
 "Plug 'tomtom/tlib_vim'
 "Plug 'garbas/vim-snipmate'
