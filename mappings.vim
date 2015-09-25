@@ -1,57 +1,88 @@
-" allow moving by screen lines in insert mode
-inoremap <Down> <C-o>gj
+" map alt to M-..
+execute "set <M-d>=\ed"
+let mapleader = ","
+
+" navigation
+nmap <C-k> {
+nmap <C-j> }
+nmap <C-h> [m
+nmap <C-l> ]m
+" move by screen lines in insert mode:
+inoremap <Up> <C-o>gj
 inoremap <Up> <C-o>gk
 
+" opening new buffers
+nnoremap <leader>s :vs<CR>
+nnoremap <leader>t :tab sp<CR>
+nnoremap <leader><leader>n :tabnew<CR>:Note 
+vnoremap <leader>n :NoteFromSelectedText<cr>
+nnoremap <leader>n :tabnew<CR>:Note index<CR>
+
+nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
+nmap <leader><leader><leader> :Goyo<CR>
+
+" indenting
+xnoremap <Tab> >gv
+xnoremap <S-Tab> <gv
+" paste
+nmap <leader>p "*p
+nmap <leader><leader>p o<Esc>"*p
 " EasyAlign
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
-map <leader>d :Dispatch 
-map <leader>! :Dispatch! 
-map <leader>m :Make<CR>
-map <leader>ge :Btabedit 
+" Background jobs
+nmap <leader>d  :Dispatch 
+nmap <leader>!  :Dispatch! 
+nmap <leader>m  :Make<CR>
 
 " git
-map <leader>gs :Gstatus<CR>
-map <leader>gc :Gcommit<CR>
-map <leader>gw :Gwrite<CR>
-map <leader>gr :Gread<CR>
-map <leader>gl :Glog<CR>
-map <leader>gb :Gblame<CR>
-map <leader>gp :Gpush<CR>
-map <leader>gg :Gbrowse<CR>
-map <leader>gd :Gvdiff<CR>
-map <leader>gv :Gitv<CR>
+nmap <leader>gs :Gstatus<CR>
+nmap <leader>gc :Gcommit<CR>
+nmap <leader>gw :Gwrite<CR>
+nmap <leader>gr :Gread<CR>
+nmap <leader>gl :Glog<CR>
+nmap <leader>gb :Gblame<CR>
+nmap <leader>gp :Gpush<CR>
+nmap <leader>gg :Gbrowse<CR>
+nmap <leader>gd :Gvdiff<CR>
+nmap <leader>gv :Gitv<CR>
 
 " rails
-map <leader>x  :Rextract 
-map <leader>c  :CtrlPTag<cr>
-map <leader>f  :CtrlPClearCache<cr>\|:CtrlP<cr>
-map <leader>aa :CtrlPClearCache<cr>\|:CtrlP app/assets<cr>
-map <leader>ac :CtrlPClearCache<cr>\|:CtrlP app/controllers<cr>
-map <leader>ah :CtrlPClearCache<cr>\|:CtrlP app/helpers<cr>
-map <leader>am :CtrlPClearCache<cr>\|:CtrlP app/models<cr>
-map <leader>av :CtrlPClearCache<cr>\|:CtrlP app/views<cr>
-map <leader>c  :CtrlPClearCache<cr>\|:CtrlP config<cr>
-map <leader>f  :CtrlPClearCache<cr>\|:CtrlP features<cr>
-map <leader>l  :CtrlPClearCache<cr>\|:CtrlP lib<cr>
-map <leader>p  :CtrlPClearCache<cr>\|:CtrlP public<cr>
-map <leader>s  :CtrlPClearCache<cr>\|:CtrlP spec<cr>
-map <leader>t  :CtrlPClearCache<cr>\|:CtrlP test<cr>
+nmap <leader>x  :Rextract 
+nmap <leader>aa :CtrlPClearCache<CR>\|:CtrlP app/assets<CR>
+nmap <leader>ac :CtrlPClearCache<CR>\|:CtrlP app/controllers<CR>
+nmap <leader>ah :CtrlPClearCache<CR>\|:CtrlP app/helpers<CR>
+nmap <leader>am :CtrlPClearCache<CR>\|:CtrlP app/models<CR>
+nmap <leader>av :CtrlPClearCache<CR>\|:CtrlP app/views<CR>
+nmap <leader>rc :CtrlPClearCache<CR>\|:CtrlP config<CR>
+nmap <leader>rf :CtrlPClearCache<CR>\|:CtrlP features<CR>
+nmap <leader>rl :CtrlPClearCache<CR>\|:CtrlP lib<CR>
+nmap <leader>rp :CtrlPClearCache<CR>\|:CtrlP public<CR>
+nmap <leader>rs :CtrlPClearCache<CR>\|:CtrlP spec<CR>
+nmap <leader>rt :CtrlPClearCache<CR>\|:CtrlP test<CR>
 
-map <leader>p :set paste<CR>"*p:set nopaste<cr>
-map <leader><leader>p :set paste<CR>o<ESC>"*p:set nopaste<cr>
+" browsers
+nnoremap <silent> <C-n> :call NERDTreeToggleInCurDir()<CR>
+nnoremap <silent> <C-t> :TagbarOpenAutoClose<CR>
+nmap <leader>cc :CtrlP<CR>
+nmap <leader>ct :CtrlPTag<CR>
+nmap <leader>cr :CtrlPClearCache<CR>:CtrlP<CR>
 
-map <C-N> :call NERDTreeToggleInCurDir()<CR>
-map <C-T> :TagbarOpenAutoClose<CR>
+" edit shortcuts
+nmap <leader>ev :tabe ~/.vim/
+nmap <leader>ed :tabe ~/.dotfiles/
+nmap <leader>eh :tabe ~/
+nmap <leader>eg :Btabedit 
 
-nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
-
-map <F1> :sp ~/.vim/
-map <F2> :sp ~/.dotfiles/
-map <F3> :sp ~/
-
-map <F6> :set fileencoding=
-map <F7> :set filetype=
-
-map <F12> :Gist 
+" tab navigation
+nnoremap <leader>1 1gt
+nnoremap <leader>2 2gt
+nnoremap <leader>3 3gt
+nnoremap <leader>4 4gt
+nnoremap <leader>5 5gt
+nnoremap <leader>6 6gt
+nnoremap <leader>7 7gt
+nnoremap <leader>8 8gt
+nnoremap <leader>9 9gt
+nnoremap <leader>0 :tablast<CR>

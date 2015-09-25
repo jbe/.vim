@@ -18,7 +18,9 @@ Plug 'slim-template/vim-slim'
 
 " Workflow
 Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/goyo.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'keith/investigate.vim'
 "Plug 'MarcWeber/vim-addon-mw-utils' " for snipmate
@@ -47,7 +49,9 @@ Plug 'ervandew/screen'
 " Tools
 Plug 'tpope/vim-dispatch'
 Plug 'scrooloose/nerdtree'
-Plug 'majutsushi/tagbar',   { 'on':  'TagbarOpenAutoClose' }
+Plug 'majutsushi/tagbar', { 'on':  'TagbarOpenAutoClose' }
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-notes'
 "Plug 'taglist.vim'
 
 call plug#end()
