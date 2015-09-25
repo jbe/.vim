@@ -15,11 +15,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'slim-template/vim-slim'
 
-
 " Workflow
-Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-surround'
-Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/goyo.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'keith/investigate.vim'
@@ -29,6 +25,11 @@ Plug 'milkypostman/vim-togglelist'
 "Plug 'garbas/vim-snipmate'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+
+" Motions etc
+Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion'
+Plug 'junegunn/vim-easy-align'
 
 " Languages
 Plug 'scrooloose/syntastic'
