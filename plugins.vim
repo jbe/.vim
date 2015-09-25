@@ -30,6 +30,7 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/vim-easy-align'
+Plug 'tomtom/tcomment_vim'
 
 " Languages
 Plug 'scrooloose/syntastic'

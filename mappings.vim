@@ -2,6 +2,8 @@
 execute "set <M-d>=\ed"
 let mapleader = ","
 
+nmap <leader>gt :cd %:p:h<CR>:pwd<CR>
+
 " navigation
 nmap <C-k> {
 nmap <C-j> }
@@ -10,6 +12,7 @@ nmap <C-l> ]m
 " move by screen lines in insert mode:
 inoremap <Up> <C-o>gj
 inoremap <Up> <C-o>gk
+vmap <leader>c gc
 
 " opening new buffers
 nnoremap <leader>s :vs<CR>
