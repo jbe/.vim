@@ -25,8 +25,8 @@ nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
 nmap <leader><leader><leader> :Goyo<CR>
 
 " indenting
-xnoremap <Tab> >gv
-xnoremap <S-Tab> <gv
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 " paste
 nmap <leader>p "*p
 nmap <leader><leader>p o<Esc>"*p
