@@ -47,10 +47,11 @@ nmap <leader>gw :Gwrite<CR>
 nmap <leader>gr :Gread<CR>
 nmap <leader>gl :Glog<CR>
 nmap <leader>gb :Gblame<CR>
-nmap <leader>gp :Gpush<CR>
 nmap <leader>gg :Gbrowse<CR>
 nmap <leader>gd :Gvdiff<CR>
 nmap <leader>gv :Gitv<CR>
+nmap <leader>gps :Gpush<CR>
+nmap <leader>gpl :Gpull<CR>
 
 " rails
 nmap <leader>x  :Rextract 
