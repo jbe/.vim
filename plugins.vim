@@ -23,8 +23,8 @@ Plug 'milkypostman/vim-togglelist'
 "Plug 'MarcWeber/vim-addon-mw-utils' " for snipmate
 "Plug 'tomtom/tlib_vim'
 "Plug 'garbas/vim-snipmate'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
 
 " Motions etc
 Plug 'tpope/vim-surround'
