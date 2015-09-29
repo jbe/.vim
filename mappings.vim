@@ -50,7 +50,7 @@ nmap <leader>gb :Gblame<CR>
 nmap <leader>gg :Gbrowse<CR>
 nmap <leader>gd :Gvdiff<CR>
 nmap <leader>gv :Gitv<CR>
-nmap <leader>gps :Gpush<CR>
+nmap <leader>gps :Gpush origin head<CR>
 nmap <leader>gpl :Gpull<CR>
 
 " rails
