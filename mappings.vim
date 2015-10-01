@@ -66,6 +66,7 @@ nmap <leader>rl :CtrlPClearCache<CR>\|:CtrlP lib<CR>
 nmap <leader>rp :CtrlPClearCache<CR>\|:CtrlP public<CR>
 nmap <leader>rs :CtrlPClearCache<CR>\|:CtrlP spec<CR>
 nmap <leader>rt :CtrlPClearCache<CR>\|:CtrlP test<CR>
+nmap <leader>vg :CtrlPClearCache<CR>\|:CtrlP vendor/gems<CR>
 
 " browsers & toggling
 nnoremap <silent> <C-n> :call NERDTreeToggleInCurDir()<CR>
