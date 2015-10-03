@@ -19,7 +19,7 @@ nnoremap <leader>s :vs<CR>
 nnoremap <leader>t :tab sp<CR>
 nnoremap <leader><leader>n :tabnew<CR>:Note 
 vnoremap <leader>n :NoteFromSelectedText<CR>
-nnoremap <leader>n :tabnew<CR>:Note index<CR>
+nnoremap <leader>n :tabe note:index<CR>
 
 nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
 nmap <leader><leader><leader> :Goyo<CR>
