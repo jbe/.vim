@@ -24,6 +24,8 @@ source ~/.vim/autocommands.vim
 source ~/.vim/mappings.vim
 source ~/.vim/tool_config.vim
 
+runtime! ftplugin/man.vim " Use included manpage plugin
+
 
 " APPEARANCE
 syntax enable
