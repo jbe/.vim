@@ -1,18 +1,23 @@
 " map alt to M-..
-execute "set <M-d>=\ed"
 let mapleader = ","
 
-nmap <leader>gt :cd %:p:h<CR>:pwd<CR>
-
-" navigation
-nmap <C-k> {
-nmap <C-j> }
-nmap <C-h> [m
-nmap <C-l> ]m
 " move by screen lines in insert mode:
 inoremap <Up> <C-o>gj
 inoremap <Up> <C-o>gk
-vmap <leader>c gc
+"
+" Map norwegian keys to navigation!
+nnoremap <silent> æ :<C-u>execute 'keepjumps normal!' v:count1 . '}'<CR>
+nnoremap <silent> å :<C-u>execute 'keepjumps normal!' v:count1 . '{'<CR>
+nnoremap Å <C-y>
+nnoremap Æ <C-e>
+nnoremap <silent> ø :<C-u>execute 'keepjumps normal!' v:count1 . ']m'<CR>
+nnoremap <silent> ø :<C-u>execute 'keepjumps normal!' v:count1 . '[m'<CR>
+
+" More navigation
+nnoremap <CR> G
+
+" cd to current file
+nmap <leader>gt :cd %:p:h<CR>:pwd<CR>
 
 " opening new buffers
 nnoremap <leader>s :vs<CR>
@@ -21,15 +26,19 @@ nnoremap <leader><leader>n :tabnew<CR>:Note
 vnoremap <leader>n :NoteFromSelectedText<CR>
 nnoremap <leader>n :tabe note:index<CR>
 
+" UI
 nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
 nmap <leader><leader><leader> :Goyo<CR>
 
 " indenting
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
-" paste
-nmap <leader>p "*p
-nmap <leader><leader>p o<Esc>"*p
+
+" Clipboard magic
+nnoremap <leader>p "+p
+nnoremap <leader><leader>p o<Esc>"+p
+nnoremap <leader>y "+y
+
 " EasyAlign
 vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
@@ -54,7 +63,7 @@ nmap <leader>gps :Gpush origin HEAD<CR>
 nmap <leader>gpl :Gpull<CR>
 
 " rails
-nmap <leader>x  :Rextract 
+vmap <leader>x  :Rextract 
 nmap <leader>aa :CtrlPClearCache<CR>\|:CtrlP app/assets<CR>
 nmap <leader>ac :CtrlPClearCache<CR>\|:CtrlP app/controllers<CR>
 nmap <leader>ah :CtrlPClearCache<CR>\|:CtrlP app/helpers<CR>
