@@ -10,11 +10,10 @@ nnoremap <silent> æ :<C-u>execute 'keepjumps normal!' v:count1 . '}'<CR>
 nnoremap <silent> å :<C-u>execute 'keepjumps normal!' v:count1 . '{'<CR>
 nnoremap Å <C-y>
 nnoremap Æ <C-e>
-nnoremap <silent> ø :<C-u>execute 'keepjumps normal!' v:count1 . ']m'<CR>
-nnoremap <silent> ø :<C-u>execute 'keepjumps normal!' v:count1 . '[m'<CR>
 
 " More navigation
 nnoremap <CR> G
+nnoremap <leader>q :q<CR>
 
 " cd to current file
 nmap <leader>gt :cd %:p:h<CR>:pwd<CR>
@@ -22,9 +21,10 @@ nmap <leader>gt :cd %:p:h<CR>:pwd<CR>
 " opening new buffers
 nnoremap <leader>s :vs<CR>
 nnoremap <leader>t :tab sp<CR>
-nnoremap <leader><leader>n :tabnew<CR>:Note 
-vnoremap <leader>n :NoteFromSelectedText<CR>
+nnoremap <leader><leader>n :Note 
 nnoremap <leader>n :tabe note:index<CR>
+vnoremap <leader>n :NoteFromSelectedText<CR>
+nnoremap <leader>e :e 
 
 " UI
 nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
@@ -84,7 +84,7 @@ nmap <leader>cc :CtrlP<CR>
 nmap <leader>ct :CtrlPTag<CR>
 nmap <leader>cr :CtrlPClearCache<CR>:CtrlP<CR>
 nmap <silent> <leader>l :call ToggleLocationList()<CR>
-nmap <silent> <leader>q :call ToggleQuickfixList()<CR>
+nmap <silent> <leader><leader>q :call ToggleQuickfixList()<CR>
 
 " edit shortcuts
 nmap <leader>ev :tabe ~/.vim/
