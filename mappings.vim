@@ -24,7 +24,7 @@ nnoremap <leader>t :tab sp<CR>
 nnoremap <leader><leader>n :Note 
 nnoremap <leader>n :tabe note:index<CR>
 vnoremap <leader>n :NoteFromSelectedText<CR>
-nnoremap <leader>e :e 
+nnoremap <leader>o :e 
 
 " UI
 nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
