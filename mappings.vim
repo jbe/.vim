@@ -6,10 +6,10 @@ inoremap <Up> <C-o>gj
 inoremap <Up> <C-o>gk
 "
 " Map norwegian keys to navigation!
-nnoremap <silent> æ :<C-u>execute 'keepjumps normal!' v:count1 . '}'<CR>
-nnoremap <silent> å :<C-u>execute 'keepjumps normal!' v:count1 . '{'<CR>
-nnoremap Å <C-y>
-nnoremap Æ <C-e>
+nnoremap å <C-y>
+nnoremap æ <C-e>
+nnoremap <silent> Å :<C-u>execute 'keepjumps normal!' v:count1 . '{'<CR>
+nnoremap <silent> Æ :<C-u>execute 'keepjumps normal!' v:count1 . '}'<CR>
 
 " More navigation
 nnoremap <CR> G
