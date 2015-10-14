@@ -70,6 +70,7 @@ nmap <leader>ah :CtrlPClearCache<CR>\|:CtrlP app/helpers<CR>
 nmap <leader>am :CtrlPClearCache<CR>\|:CtrlP app/models<CR>
 nmap <leader>av :CtrlPClearCache<CR>\|:CtrlP app/views<CR>
 nmap <leader>rc :CtrlPClearCache<CR>\|:CtrlP config<CR>
+nmap <leader>rd :CtrlPClearCache<CR>\|:CtrlP db<CR>
 nmap <leader>rf :CtrlPClearCache<CR>\|:CtrlP features<CR>
 nmap <leader>rl :CtrlPClearCache<CR>\|:CtrlP lib<CR>
 nmap <leader>rp :CtrlPClearCache<CR>\|:CtrlP public<CR>
