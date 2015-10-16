@@ -5,6 +5,6 @@ autocmd FileType html set formatoptions+=tl
 autocmd FileType make set noexpandtab shiftwidth=8
 autocmd FileType ruby setlocal autoindent expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType haml setlocal autoindent expandtab shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType markdown normal zR
+autocmd FileType mkd.markdown normal zR
 
 au BufRead,BufNewFile *.thor setfiletype ruby

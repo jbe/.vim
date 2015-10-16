@@ -10,7 +10,7 @@ set re=1            " use new regexp engine
 "set hidden         " allow hiding unsaved files
 
 set nobackup        " no backup files
-set nowritebackup   " only in case you don't want a backup file while editing
+set nowritebackup   " no backup file while editing
 set noswapfile      " no swap files
 
 set undofile                " Save undo's after file closes
@@ -22,9 +22,8 @@ source ~/.vim/plugins.vim
 source ~/.vim/initialize.vim
 source ~/.vim/autocommands.vim
 source ~/.vim/mappings.vim
+source ~/.vim/typing_shortcuts.vim
 source ~/.vim/tool_config.vim
-
-runtime! ftplugin/man.vim " Use included manpage plugin
 
 
 " APPEARANCE

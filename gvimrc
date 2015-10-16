@@ -1,10 +1,12 @@
 
 color jellybeans
 
-set gfn=DejaVu\ Sans\ Mono\ 12
+" set gfn=DejaVu\ Sans\ Mono\ 12
 
 if has("gui_macvim")
   set gfn=Menlo:h16
+else
+  set gfn=Inconsolata-g\ for\ Powerline\ 12
 endif
 
 set guioptions-=T " no toolbar
