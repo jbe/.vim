@@ -1,7 +1,6 @@
 let mapleader = ","
 
 imap <C-p> <Plug>snipMateNextOrTrigger
-imap <C-o> <Plug>snipMateBack
 
 " move by screen lines in insert mode:
 inoremap <Up> <C-o>gj
@@ -12,7 +11,6 @@ nnoremap å <C-y>
 nnoremap æ <C-e>
 nnoremap <silent> Å :<C-u>execute 'keepjumps normal!' v:count1 . '{'<CR>
 nnoremap <silent> Æ :<C-u>execute 'keepjumps normal!' v:count1 . '}'<CR>
-
 
 " More navigation
 nnoremap <CR> G
@@ -34,7 +32,7 @@ nmap <leader><leader><leader> :Goyo<CR>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-" Clipboard magic
+" Clipboard
 nnoremap <leader>p "+p
 nnoremap <leader><leader>p o<Esc>"+p
 nnoremap <leader>y "+y
@@ -44,10 +42,10 @@ vmap <Enter> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Background jobs
+nmap <leader><leader>f :FocusDispatch 
 nmap <leader>d :Dispatch 
 nmap <leader><leader>d :Start 
 nmap <leader>m :Make<CR>
-nmap <leader><leader>f :FocusDispatch 
 
 " git
 nmap <leader><leader>g :Git 
@@ -86,7 +84,7 @@ nmap <silent> <leader>l :call ToggleLocationList()<CR>
 nmap <silent> <leader><leader>q :call ToggleQuickfixList()<CR>
 
 " edit shortcuts
-nnoremap <leader>ee :e 
+nnoremap <leader><leader>e :e 
 nnoremap <leader>ev :tabe ~/.vim/
 nnoremap <leader>ed :tabe ~/.dotfiles/
 nnoremap <leader>eh :tabe ~/
@@ -94,9 +92,9 @@ nnoremap <leader>er :tabe ~/repos/
 nnoremap <leader>el :tabe ~/lab/
 nnoremap <leader>em :tabe ~/me/
 nnoremap <leader>eb :tabe ~/.boxconf/
-nnoremap <leader>en :tabe note:index<CR>
+nnoremap <leader>en :Note 
+nnoremap <leader>n :tabe note:index<CR>
 vnoremap <leader>n :NoteFromSelectedText<CR>
-nnoremap <leader><leader>n :Note 
 
 " tab navigation
 nnoremap <leader>1 1gt
