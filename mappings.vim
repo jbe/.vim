@@ -13,9 +13,8 @@ nnoremap <silent> Å :<C-u>execute 'keepjumps normal!' v:count1 . '{'<CR>
 nnoremap <silent> Æ :<C-u>execute 'keepjumps normal!' v:count1 . '}'<CR>
 
 " More navigation
-nnoremap <CR> G
+nnoremap <CR> /
 nnoremap <leader>q :q<CR>
-nnoremap <leader>f /
 nnoremap <leader>s :s/
 nnoremap <leader><leader>s :%s/
 
@@ -38,11 +37,11 @@ nnoremap <leader><leader>p o<Esc>"+p
 nnoremap <leader>y "+y
 
 " EasyAlign
-vmap <Enter> <Plug>(EasyAlign)
+vmap <CR> <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Background jobs
-nmap <leader><leader>f :FocusDispatch 
+nmap <leader>f :FocusDispatch 
 nmap <leader>d :Dispatch 
 nmap <leader><leader>d :Start 
 nmap <leader>m :Make<CR>
