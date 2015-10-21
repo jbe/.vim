@@ -37,7 +37,7 @@ Plug 'honza/vim-snippets'
 "Plug 'easymotion/vim-easymotion'
 
 " Languages
-Plug 'plasticboy/vim-markdown', { 'for': 'mkd.markdown' }
+Plug 'plasticboy/vim-markdown'
 Plug 'zah/nim.vim', { 'for': 'nim' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
