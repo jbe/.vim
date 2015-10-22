@@ -18,6 +18,8 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>s :s/
 nnoremap <leader><leader>s :%s/
 
+nnoremap <leader><C-p> :CtrlPClearCache<CR>
+
 " cd to current file
 nmap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
