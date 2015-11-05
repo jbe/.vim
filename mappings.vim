@@ -81,8 +81,8 @@ nmap <leader>rg :CtrlPClearCache<CR>\|:CtrlP vendor/gems<CR>
 " browsers & toggling
 nnoremap <silent> <C-n> :call NERDTreeToggleInCurDir()<CR>
 nnoremap <silent> <C-t> :TagbarOpenAutoClose<CR>
-nmap <silent> <leader>l :call ToggleLocationList()<CR>
-nmap <silent> <leader><leader>q :call ToggleQuickfixList()<CR>
+nmap <silent> <leader>l :call ToggleQuickfixList()<CR>
+nmap <silent> <leader><leader>l :call ToggleLocationList()<CR>
 
 " edit shortcuts
 nnoremap <leader><leader>e :e 
