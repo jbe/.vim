@@ -97,14 +97,6 @@ nnoremap <leader>en :Note
 nnoremap <leader>n :tabe note:index<CR>
 vnoremap <leader>n :NoteFromSelectedText<CR>
 
-" tab navigation
-nnoremap <leader>1 1gt
-nnoremap <leader>2 2gt
-nnoremap <leader>3 3gt
-nnoremap <leader>4 4gt
-nnoremap <leader>5 5gt
-nnoremap <leader>6 6gt
-nnoremap <leader>7 7gt
-nnoremap <leader>8 8gt
-nnoremap <leader>9 9gt
-nnoremap <leader>0 :tablast<CR>
+nnoremap <leader>1 :!<Up><CR>
+nnoremap <leader>2 @q
+nnoremap <leader>5 :source %<CR>
