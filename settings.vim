@@ -17,17 +17,6 @@ set wrap lbr                    " break by words
 set backspace=indent,eol,start  " liberal backspacing in insert mode
 set showmatch                   " show matching brackets when hovering
 set viminfo='25,\"50,n~/.vim/.viminfo
-set splitright
-
-" DEFAULT TAB STOPS & INDENTING
-set tabstop=4
-set softtabstop=2
-set shiftwidth=2
-set shiftround
-set autoindent
-set smartindent
-set expandtab
-set smarttab
 
 set history=50
 set smartcase
