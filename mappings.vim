@@ -1,52 +1,66 @@
 let mapleader = ","
 
-imap <C-p> <Plug>snipMateNextOrTrigger
+imap <tab> <Plug>snipMateNextOrTrigger
 
 " move by screen lines in insert mode:
 inoremap <Up> <C-o>gj
 inoremap <Up> <C-o>gk
-"
+
 " Map norwegian keys to navigation!
 nnoremap å <C-y>
 nnoremap æ <C-e>
 nnoremap <silent> Å :<C-u>execute 'keepjumps normal!' v:count1 . '{'<CR>
 nnoremap <silent> Æ :<C-u>execute 'keepjumps normal!' v:count1 . '}'<CR>
 
-" More navigation
-nnoremap <CR> /
+inoremap jj <Esc>
+map <BS> <C-c>
+nnoremap - :
+
+" Files, navigation, tabs
+noremap  <CR> /
+noremap  + ?
+nnoremap \ :!ag<SPACE>
+nnoremap <CR><CR> :CtrlP<CR>
+nnoremap <CR><CR><CR> :CtrlPLine<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>s :s/
-nnoremap <leader><leader>s :%s/
-
-nnoremap <leader><C-p> :CtrlPClearCache<CR>
-
-" cd to current file
-nmap <leader>cd :cd %:p:h<CR>:pwd<CR>
-
-" UI
+nnoremap <leader>w :w<CR>
 nnoremap <leader>v :vs<CR>
 nnoremap <leader>t :tab sp<CR>
+nnoremap <leader><leader>e :e<SPACE>
+nnoremap <BS> <C-w><C-w>
+nnoremap <TAB> gt
+nnoremap <S-TAB> gT
+
+" UI
 nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
 nmap <leader><leader><leader> :Goyo<CR>
 
 " indenting
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
+vnoremap > >gv
+vnoremap < <gv
+vmap <Space> <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 " Clipboard
 nnoremap <leader>p "+p
 nnoremap <leader><leader>p o<Esc>"+p
 nnoremap <leader>y "+y
 
-" EasyAlign
-vmap <CR> <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
+" search, substitution etc
+nnoremap <leader>s :s/
+nnoremap <leader><leader>s :%s/
 
 " Background jobs
 nmap <leader>f :FocusDispatch 
 nmap <leader>d :Dispatch 
 nmap <leader><leader>d :Start 
 nmap <leader>m :Make<CR>
+
+" browsers & toggling
+nnoremap <silent> <C-n> :call NERDTreeToggleInCurDir()<CR>
+nnoremap <silent> <C-t> :TagbarOpenAutoClose<CR>
+nmap <silent> <leader>l :call ToggleQuickfixList()<CR>
+nmap <silent> <leader><leader>l :call ToggleLocationList()<CR>
 
 " git
 nmap <leader><leader>g :Git 
@@ -78,14 +92,7 @@ nmap <leader>rs :CtrlPClearCache<CR>\|:CtrlP spec<CR>
 nmap <leader>rt :CtrlPClearCache<CR>\|:CtrlP test<CR>
 nmap <leader>rg :CtrlPClearCache<CR>\|:CtrlP vendor/gems<CR>
 
-" browsers & toggling
-nnoremap <silent> <C-n> :call NERDTreeToggleInCurDir()<CR>
-nnoremap <silent> <C-t> :TagbarOpenAutoClose<CR>
-nmap <silent> <leader>l :call ToggleQuickfixList()<CR>
-nmap <silent> <leader><leader>l :call ToggleLocationList()<CR>
-
 " edit shortcuts
-nnoremap <leader><leader>e :e 
 nnoremap <leader>ev :tabe ~/.vim/
 nnoremap <leader>ed :tabe ~/.dotfiles/
 nnoremap <leader>eh :tabe ~/
@@ -99,4 +106,5 @@ vnoremap <leader>n :NoteFromSelectedText<CR>
 
 nnoremap <leader>1 :!<Up><CR>
 nnoremap <leader>2 @q
+noremap  <leader>4 $
 nnoremap <leader>5 :source %<CR>

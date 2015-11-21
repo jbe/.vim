@@ -11,7 +11,6 @@ inoremap ,.b \
 inoremap ,.d $
 inoremap ,.n &
 inoremap ,.p %
-inoremap ,- <C-c>
 
 onoremap ,.aq a(
 onoremap ,.aw a[

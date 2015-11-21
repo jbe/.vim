@@ -13,8 +13,9 @@ let NERDTreeIgnore = ['^\.git$', '\.swp$']
 let NERDTreeShowHidden = 0
 
 let g:syntastic_error_symbol = "✗"
-let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_warning_symbol = "•"
 let g:syntastic_enable_signs = 1
+let g:syntastic_check_on_open = 1
 
 let g:notes_directories = ['~/me/notes']
 
@@ -22,3 +23,15 @@ let g:toggle_list_no_mappings = 1
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+
+" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor " replace grep
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+  let g:ctrlp_use_caching = 0
+  let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
+endif
+

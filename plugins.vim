@@ -24,6 +24,7 @@ Plug 'tpope/vim-rake'
 Plug 'slim-template/vim-slim'
 
 " Workflow
+Plug 'airblade/vim-rooter'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'keith/investigate.vim'
 Plug 'tpope/vim-surround'
@@ -54,8 +55,10 @@ Plug 'tpope/vim-dispatch'
 " Tools
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar', { 'on':  'TagbarOpenAutoClose' }
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-notes'
+if isdirectory(expand("$HOME/me/notes"))
+  Plug 'xolox/vim-misc'
+  Plug 'xolox/vim-notes'
+endif
 Plug 'gregsexton/gitv'
 Plug 'sjl/gundo.vim'
 "Plug 'taglist.vim'

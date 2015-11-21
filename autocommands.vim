@@ -10,3 +10,18 @@ autocmd FileType mkd.markdown normal zR
 autocmd FileType mkd normal zR
 
 au BufRead,BufNewFile *.thor setfiletype ruby
+
+au BufRead,BufNewFile * match ErrorMsg '\%>79v.\+'
+
+" restores cursor position on open
+function! ResCur()
+  if line("'\"") <= line("$")
+    normal! g`"
+    return 1
+  endif
+endfunction
+
+augroup resCur
+  autocmd!
+  autocmd BufWinEnter * call ResCur()
+augroup END
