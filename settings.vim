@@ -17,6 +17,7 @@ set wrap lbr                    " break by words
 set backspace=indent,eol,start  " liberal backspacing in insert mode
 set showmatch                   " show matching brackets when hovering
 set viminfo='25,\"50,n~/.vim/.viminfo
+set splitright
 
 set history=50
 set smartcase
