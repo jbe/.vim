@@ -12,6 +12,10 @@ let g:gist_clip_command = 'xclip -selection clipboard'
 let NERDTreeIgnore = ['^\.git$', '\.swp$']
 let NERDTreeShowHidden = 0
 
+let g:detectindent_preferred_expandtab = 1
+let g:detectindent_preferred_indent = 2
+let g:detectindent_preferred_when_mixed = 1
+
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "•"
 let g:syntastic_enable_signs = 1

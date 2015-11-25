@@ -24,6 +24,7 @@ Plug 'tpope/vim-rake'
 Plug 'slim-template/vim-slim'
 
 " Workflow
+Plug 'ciaranm/detectindent'
 Plug 'airblade/vim-rooter'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'keith/investigate.vim'
@@ -48,7 +49,6 @@ Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-sleuth'
 "Plug 'Gist.vim'
 "Plug 'ervandew/screen'
 "Plug 'csexton/jekyll.vim'

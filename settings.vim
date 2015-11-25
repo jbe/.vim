@@ -10,6 +10,10 @@ set number          " show line numbers
 set list            " visual warnings for unsafe characters
 set listchars=tab:▸·,trail:·,nbsp:●
 
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 " INTERFACE
 set wildmenu
 set wildignore=.keep,coverage,node_modules,tmp
