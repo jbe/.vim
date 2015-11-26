@@ -14,6 +14,7 @@ set undoreload=10000        " number of lines to save for undo
 
 source ~/.vim/plugins.vim
 source ~/.vim/settings.vim
+source ~/.vim/commands.vim
 source ~/.vim/autocommands.vim
 source ~/.vim/mappings.vim
 source ~/.vim/shortcuts.vim
