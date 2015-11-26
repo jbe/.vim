@@ -12,8 +12,6 @@ autocmd FileType mkd normal zR
 au BufRead,BufNewFile *.thor setfiletype ruby
 au BufReadPost * :DetectIndent 
 
-au BufRead,BufNewFile * match ErrorMsg '\%>79v.\+'
-
 " restores cursor position on open
 function! ResCur()
   if line("'\"") <= line("$")
