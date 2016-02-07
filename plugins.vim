@@ -43,6 +43,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'zah/nim.vim', { 'for': 'nim' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
+Plug 'lambdatoast/elm.vim'
 "Plug 'fasterthanlime/ooc.vim', { 'for': 'ooc' }
 
 " Integration
