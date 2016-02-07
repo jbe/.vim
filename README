@@ -1,18 +1,14 @@
 
-This is my good old Vim setup, that has evolved over the years. I don't usually clone this repo manually -- installation is handled by the dotfiles installer.
+This is my good old Vim setup, that has evolved over the years. I don't usually clone this repo manually -- it is handlet by some autoinstall script.
 
 TO INSTALL:
 
-Clone repo to ~/.vim (fork first if you'd like)
-
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
-
-    vim +PlugInstall +qa
+Clone repo to ~/.vim (fork first if you'd like), then run `vim +PlugInstall +qa`.
 
 FEATURES
 
-* Many UI/workflow enhancements
+* Plugins managed by VimPlug
+* UI/workflow enhancements
 * Understandable file structure
 * Language support
 + Much more
