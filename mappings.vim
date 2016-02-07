@@ -100,9 +100,6 @@ nnoremap <leader>er :tabe ~/repos/
 nnoremap <leader>el :tabe ~/lab/
 nnoremap <leader>em :tabe ~/me/
 nnoremap <leader>eb :tabe ~/.boxconf/
-nnoremap <leader>en :Note 
-nnoremap <leader>n :tabe note:index<CR>
-vnoremap <leader>n :NoteFromSelectedText<CR>
 
 nnoremap <leader>1 :!<Up><CR>
 nnoremap <leader>2 @q

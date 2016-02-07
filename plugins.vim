@@ -56,10 +56,6 @@ Plug 'tpope/vim-dispatch'
 " Tools
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar', { 'on':  'TagbarOpenAutoClose' }
-if isdirectory(expand("$HOME/me/notes"))
-  Plug 'xolox/vim-misc'
-  Plug 'xolox/vim-notes'
-endif
 Plug 'gregsexton/gitv'
 Plug 'sjl/gundo.vim'
 "Plug 'taglist.vim'

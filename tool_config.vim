@@ -21,8 +21,6 @@ let g:syntastic_warning_symbol = "•"
 let g:syntastic_enable_signs = 1
 let g:syntastic_check_on_open = 1
 
-let g:notes_directories = ['~/me/notes']
-
 let g:toggle_list_no_mappings = 1
 
 let g:airline_powerline_fonts = 1
