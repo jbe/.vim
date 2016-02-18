@@ -57,7 +57,7 @@ nmap <leader><leader>d :Start
 nmap <leader>m :Make<CR>
 
 " browsers & toggling
-nnoremap <silent> <C-n> :call NERDTreeToggleInCurDir()<CR>
+nnoremap <leader>n :NERDTreeFind<CR>
 nnoremap <silent> <C-t> :TagbarOpenAutoClose<CR>
 nmap <silent> <leader>l :call ToggleQuickfixList()<CR>
 nmap <silent> <leader><leader>l :call ToggleLocationList()<CR>
