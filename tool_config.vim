@@ -13,6 +13,8 @@ let NERDTreeIgnore = ['^\.git$', '\.swp$']
 let NERDTreeShowHidden = 0
 let NERDTreeQuitOnOpen=1
 
+let g:rooter_manual_only = 1
+
 let g:detectindent_preferred_expandtab = 1
 let g:detectindent_preferred_indent = 2
 let g:detectindent_preferred_when_mixed = 1
