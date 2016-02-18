@@ -7,21 +7,18 @@ inoremap <Up> <C-o>gj
 inoremap <Up> <C-o>gk
 
 " Map norwegian keys to navigation!
-nnoremap å <C-y>
-nnoremap æ <C-e>
-nnoremap <silent> Å :<C-u>execute 'keepjumps normal!' v:count1 . '{'<CR>
-nnoremap <silent> Æ :<C-u>execute 'keepjumps normal!' v:count1 . '}'<CR>
+nnoremap Å <C-y>
+nnoremap Æ <C-e>
+nnoremap <silent> å :<C-u>execute 'keepjumps normal!' v:count1 . '{'<CR>
+nnoremap <silent> æ :<C-u>execute 'keepjumps normal!' v:count1 . '}'<CR>
 
-inoremap jj <Esc>
-map <BS> <C-c>
-nnoremap - :
+inoremap <C-c> <Esc>
 
 " Files, navigation, tabs
 noremap  <CR> /
 noremap  + ?
 nnoremap \ :!ag<SPACE>
-nnoremap <CR><CR> :CtrlP<CR>
-nnoremap <CR><CR><CR> :CtrlPLine<CR>
+nnoremap <leader>c :CtrlP<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>v :vs<CR>
@@ -60,7 +57,6 @@ nmap <leader>m :Make<CR>
 nnoremap <leader>n :NERDTreeFind<CR>
 nnoremap <silent> <C-t> :TagbarOpenAutoClose<CR>
 nmap <silent> <leader>l :call ToggleQuickfixList()<CR>
-nmap <silent> <leader><leader>l :call ToggleLocationList()<CR>
 
 " git
 nmap <leader><leader>g :Git 
@@ -98,8 +94,6 @@ nnoremap <leader>ed :tabe ~/.dotfiles/
 nnoremap <leader>eh :tabe ~/
 nnoremap <leader>er :tabe ~/repos/
 nnoremap <leader>el :tabe ~/lab/
-nnoremap <leader>em :tabe ~/me/
-nnoremap <leader>eb :tabe ~/.boxconf/
 
 nnoremap <leader>1 :!<Up><CR>
 nnoremap <leader>2 @q

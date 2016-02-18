@@ -17,5 +17,4 @@ source ~/.vim/settings.vim
 source ~/.vim/commands.vim
 source ~/.vim/autocommands.vim
 source ~/.vim/mappings.vim
-source ~/.vim/shortcuts.vim
 source ~/.vim/tool_config.vim
