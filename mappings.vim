@@ -74,19 +74,20 @@ nmap <leader>gpl :Gpull<CR>
 
 " rails
 vmap <leader>x  :Rextract 
-nmap <leader>aa :CtrlPClearCache<CR>\|:CtrlP app/assets<CR>
-nmap <leader>ac :CtrlPClearCache<CR>\|:CtrlP app/controllers<CR>
-nmap <leader>ah :CtrlPClearCache<CR>\|:CtrlP app/helpers<CR>
-nmap <leader>am :CtrlPClearCache<CR>\|:CtrlP app/models<CR>
-nmap <leader>av :CtrlPClearCache<CR>\|:CtrlP app/views<CR>
-nmap <leader>rc :CtrlPClearCache<CR>\|:CtrlP config<CR>
-nmap <leader>rd :CtrlPClearCache<CR>\|:CtrlP db<CR>
+nmap <leader>rs :ed db/schema.rb<CR>
+nmap <leader>rr :ed config/routes.rb<CR>
+nmap <leader>rd :ed config/db.yml<CR>
+nmap <leader>ry :ed config/settings.yml<CR>
+nmap <leader>ro :CtrlPClearCache<CR>\|:CtrlP config<CR>
+nmap <leader>ra :CtrlPClearCache<CR>\|:CtrlP app/assets<CR>
+nmap <leader>rc :CtrlPClearCache<CR>\|:CtrlP app/controllers<CR>
+nmap <leader>rh :CtrlPClearCache<CR>\|:CtrlP app/helpers<CR>
+nmap <leader>rm :CtrlPClearCache<CR>\|:CtrlP app/models<CR>
+nmap <leader>rv :CtrlPClearCache<CR>\|:CtrlP app/views<CR>
 nmap <leader>rf :CtrlPClearCache<CR>\|:CtrlP features<CR>
 nmap <leader>rl :CtrlPClearCache<CR>\|:CtrlP lib<CR>
 nmap <leader>rp :CtrlPClearCache<CR>\|:CtrlP public<CR>
-nmap <leader>rs :CtrlPClearCache<CR>\|:CtrlP spec<CR>
-nmap <leader>rt :CtrlPClearCache<CR>\|:CtrlP test<CR>
-nmap <leader>rg :CtrlPClearCache<CR>\|:CtrlP vendor/gems<CR>
+nmap <leader>rt :CtrlPClearCache<CR>\|:CtrlP spec<CR>
 
 " edit shortcuts
 nnoremap <leader>ev :tabe ~/.vim/
@@ -94,6 +95,7 @@ nnoremap <leader>ed :tabe ~/.dotfiles/
 nnoremap <leader>eh :tabe ~/
 nnoremap <leader>er :tabe ~/repos/
 nnoremap <leader>el :tabe ~/lab/
+" <leader>cd is mapped to rooter by default.
 
 nnoremap <leader>1 :!<Up><CR>
 nnoremap <leader>2 @q
