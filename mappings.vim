@@ -76,7 +76,7 @@ nmap <leader>gpl :Gpull<CR>
 vmap <leader>x  :Rextract 
 nmap <leader>rs :ed db/schema.rb<CR>
 nmap <leader>rr :ed config/routes.rb<CR>
-nmap <leader>rd :ed config/db.yml<CR>
+nmap <leader>rd :ed config/database.yml<CR>
 nmap <leader>ry :ed config/settings.yml<CR>
 nmap <leader>ro :CtrlPClearCache<CR>\|:CtrlP config<CR>
 nmap <leader>ra :CtrlPClearCache<CR>\|:CtrlP app/assets<CR>
