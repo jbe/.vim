@@ -91,10 +91,11 @@ nmap <leader>rt :CtrlPClearCache<CR>\|:CtrlP spec<CR>
 
 " edit shortcuts
 nnoremap <leader>ev :tabe ~/.vim/
-nnoremap <leader>ed :tabe ~/.dotfiles/
+nnoremap <leader>ec :tabe ~/conf/
 nnoremap <leader>eh :tabe ~/
 nnoremap <leader>er :tabe ~/repos/
 nnoremap <leader>el :tabe ~/lab/
+nnoremap <leader>eg :tabe ~/gitlab/
 " <leader>cd is mapped to rooter by default.
 
 nnoremap <leader>1 :!<Up><CR>
