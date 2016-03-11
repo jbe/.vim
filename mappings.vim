@@ -16,7 +16,6 @@ inoremap <C-c> <Esc>
 
 " Files, navigation, tabs
 noremap  <CR> /
-noremap  + ?
 nnoremap \ :!ag<SPACE>
 nnoremap <leader>c :CtrlP<CR>
 nnoremap <leader>q :q<CR>
@@ -30,7 +29,8 @@ nnoremap <S-TAB> gT
 
 " UI
 nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
-nmap <leader><leader><leader> :Goyo<CR>
+nnoremap <leader><leader><leader> :Goyo<CR>
+noremap  + :SemanticHighlightToggle<CR>
 
 " indenting
 vnoremap > >gv

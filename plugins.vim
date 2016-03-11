@@ -14,6 +14,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/goyo.vim'
+Plug 'jaxbot/semantic-highlight.vim'
 "Plug 'altercation/vim-colors-solarized'
 
 " work-related
