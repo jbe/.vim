@@ -5,6 +5,8 @@ let g:html_ignore_folding = 1
 let g:html_use_encoding = "utf8"
 let g:use_xhtml = 1
 
+let g:user_emmet_leader_key='<C-l>'
+
 let g:ScreenShellTmuxInitArgs = '-2'
 
 let g:gist_clip_command = 'xclip -selection clipboard'
