@@ -24,6 +24,8 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'slim-template/vim-slim'
 
+Plug 'bentayloruk/vim-react-es6-snippets'
+
 " Workflow
 Plug 'ciaranm/detectindent'
 Plug 'airblade/vim-rooter'
@@ -44,7 +46,9 @@ Plug 'plasticboy/vim-markdown'
 Plug 'zah/nim.vim', { 'for': 'nim' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
-Plug 'lambdatoast/elm.vim'
+Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 "Plug 'fasterthanlime/ooc.vim', { 'for': 'ooc' }
 
 " Integration
