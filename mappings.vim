@@ -11,6 +11,8 @@ nnoremap Å <C-y>
 nnoremap Æ <C-e>
 nnoremap <silent> å :<C-u>execute 'keepjumps normal!' v:count1 . '{'<CR>
 nnoremap <silent> æ :<C-u>execute 'keepjumps normal!' v:count1 . '}'<CR>
+vnoremap <silent> å {
+vnoremap <silent> æ }
 
 inoremap <C-c> <Esc>
 
@@ -102,3 +104,6 @@ nnoremap <leader>1 :!<Up><CR>
 nnoremap <leader>2 @q
 noremap  <leader>4 $
 nnoremap <leader>5 :source %<CR>
+
+inoremap ,, ""<left>
+inoremap ,. ()<left>
