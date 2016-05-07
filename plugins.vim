@@ -40,6 +40,7 @@ Plug 'garbas/vim-snipmate'
 "Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 "Plug 'easymotion/vim-easymotion'
+Plug 'mattn/emmet-vim'
 
 " Languages
 Plug 'plasticboy/vim-markdown'
