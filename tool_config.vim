@@ -24,6 +24,8 @@ let g:syntastic_warning_symbol = "•"
 let g:syntastic_enable_signs = 1
 let g:syntastic_check_on_open = 1
 
+let g:jsx_ext_required = 0
+
 let g:toggle_list_no_mappings = 1
 
 let g:airline_powerline_fonts = 1
@@ -39,4 +41,3 @@ if executable('ag')
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
 endif
-
