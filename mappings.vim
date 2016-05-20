@@ -104,6 +104,3 @@ nnoremap <leader>1 :!<Up><CR>
 nnoremap <leader>2 @q
 noremap  <leader>4 $
 nnoremap <leader>5 :source %<CR>
-
-inoremap ,, ""<left>
-inoremap ,. ()<left>

@@ -41,6 +41,7 @@ Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 "Plug 'easymotion/vim-easymotion'
 Plug 'mattn/emmet-vim'
+Plug 'jiangmiao/auto-pairs'
 
 " Languages
 Plug 'plasticboy/vim-markdown'
