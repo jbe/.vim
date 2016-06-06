@@ -3,6 +3,9 @@
 
 " set gfn=DejaVu\ Sans\ Mono\ 12
 
+" no bells please:
+set noeb vb t_vb=
+
 if has("win32")
   set gfn=Inconsolata-g\ for\ Powerline:h10:cANSI
 elseif has("gui_macvim")
