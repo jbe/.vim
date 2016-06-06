@@ -3,10 +3,12 @@
 
 " set gfn=DejaVu\ Sans\ Mono\ 12
 
-if has("gui_macvim")
+if has("win32")
+  set gfn=Inconsolata-g\ for\ Powerline:h10:cANSI
+elseif has("gui_macvim")
   set gfn=Monaco\ for\ Powerline:h16
 else
-  set gfn=Inconsolata-g\ for\ Powerline\ 12
+  set gfn=Inconsolata-g\ for\ Powerline:h12
 endif
 
 set guioptions-=T " no toolbar
@@ -56,3 +58,5 @@ command! SmallerFont call SmallerFont()
 
 map + :LargerFont<CR>
 map - :SmallerFont<CR>
+
+set gfn=Inconsolata-g\ for\ Powerline:h10:cANSI
