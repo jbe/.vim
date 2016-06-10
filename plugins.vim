@@ -23,7 +23,6 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'slim-template/vim-slim'
-
 Plug 'bentayloruk/vim-react-es6-snippets'
 
 " Workflow
@@ -51,6 +50,7 @@ Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
 Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'dpwright/vim-tup'
 "Plug 'fasterthanlime/ooc.vim', { 'for': 'ooc' }
 
 " Integration
