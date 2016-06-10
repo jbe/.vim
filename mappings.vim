@@ -18,14 +18,15 @@ inoremap <C-c> <Esc>
 
 " Files, navigation, tabs
 noremap  <CR> /
+noremap  <BS> ?
 nnoremap \ :!ag<SPACE>
-nnoremap <leader>c :CtrlP<CR>
+nnoremap <CR><CR> :CtrlPClearCache<CR>\|:CtrlP<CR>
+nnoremap <CR><CR><CR> :CtrlPClearCache<CR>\|:CtrlPLine<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>v :vs<CR>
 nnoremap <leader>t :tab sp<CR>
 nnoremap <leader><leader>e :e<SPACE>
-nnoremap <BS> <C-w><C-w>
 nnoremap <TAB> gt
 nnoremap <S-TAB> gT
 
