@@ -35,7 +35,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:ctrlp_custom_ignore = {
 \ 'dir':  '\v([\/]\(.(git|hg|svn)|nimcache)$',
-\ 'file': '\v\.(exe|so|dll)$',
+\ 'file': '\v\.(exe|so|dll|ilk|exp|pdb|obj|lib)$',
 \ }
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
