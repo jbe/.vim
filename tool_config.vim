@@ -25,7 +25,7 @@ let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "•"
 let g:syntastic_enable_signs = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_c_include_dirs = ['include', 'lib/include', 'vendor/include']
+let g:syntastic_c_include_dirs = ['include', 'lib/include', 'vendor/include', 'src', 'src/lib', 'vendor']
 
 let g:jsx_ext_required = 0
 
