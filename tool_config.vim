@@ -39,7 +39,7 @@ let g:ctrlp_custom_ignore = {
 \ }
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
-if executable('ag')
+if executable('ag') && !has("win32")
   set grepprg=ag\ --nogroup\ --nocolor " replace grep
   let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
   let g:ctrlp_use_caching = 0
