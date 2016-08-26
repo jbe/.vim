@@ -62,4 +62,6 @@ command! SmallerFont call SmallerFont()
 map + :LargerFont<CR>
 map - :SmallerFont<CR>
 
-set gfn=Inconsolata-g\ for\ Powerline:h10:cANSI
+" set gfn=Inconsolata-g\ for\ Powerline:h10:cANSI
+
+highlight Search guibg='peru' guifg='black'
