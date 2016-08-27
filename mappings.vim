@@ -29,6 +29,10 @@ nnoremap <leader>t :tab sp<CR>
 nnoremap <leader><leader>e :e<SPACE>
 nnoremap <TAB> gt
 nnoremap <S-TAB> gT
+nnoremap <leader><left> <C-w><left>
+nnoremap <leader><right> <C-w><right>
+nnoremap <leader><up> <C-w><up>
+nnoremap <leader><down> <C-w><down>
 
 " UI
 nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>
