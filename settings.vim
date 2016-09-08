@@ -7,6 +7,7 @@ set ruler           " always show cursor position
 set showmode        " display curent mode
 set showcmd         " display incomplete commands
 set number          " show line numbers
+
 if has("win32")
   set nolist
 else

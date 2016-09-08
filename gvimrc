@@ -7,7 +7,9 @@
 set noeb vb t_vb=
 
 if has("win32")
-  set gfn=Inconsolata-g\ for\ Powerline:h10:cANSI
+  set nolist
+  set gfn=Inconsolata-g\ for\ Powerline:h11:cANSI
+  " set gfn=Hack:h10:cANSI
 elseif has("gui_macvim")
   set gfn=Monaco\ for\ Powerline:h16
 else
@@ -63,5 +65,4 @@ map + :LargerFont<CR>
 map - :SmallerFont<CR>
 
 " set gfn=Inconsolata-g\ for\ Powerline:h10:cANSI
-
 highlight Search guibg='peru' guifg='black'
