@@ -17,18 +17,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'jaxbot/semantic-highlight.vim'
 "Plug 'altercation/vim-colors-solarized'
 
-" work-related
-Plug 'ngmy/vim-rubocop', { 'for': 'ruby' }
-Plug 'tpope/vim-bundler'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-rake'
-Plug 'slim-template/vim-slim'
-Plug 'bentayloruk/vim-react-es6-snippets'
-if has("win32")
-  Plug 'groenewege/vim-less'
-endif
-
-
 " Workflow
 Plug 'ciaranm/detectindent'
 Plug 'airblade/vim-rooter'
@@ -47,15 +35,8 @@ Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 
 " Languages
-Plug 'plasticboy/vim-markdown'
-Plug 'zah/nim.vim', { 'for': 'nim' }
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
-Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
 Plug 'dpwright/vim-tup'
-"Plug 'fasterthanlime/ooc.vim', { 'for': 'ooc' }
+Plug 'sheerun/vim-polyglot'
 
 " Integration
 Plug 'tpope/vim-fugitive'
