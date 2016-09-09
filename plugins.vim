@@ -24,6 +24,10 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'slim-template/vim-slim'
 Plug 'bentayloruk/vim-react-es6-snippets'
+if has("win32")
+  Plug 'groenewege/vim-less'
+endif
+
 
 " Workflow
 Plug 'ciaranm/detectindent'
