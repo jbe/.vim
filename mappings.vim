@@ -18,6 +18,7 @@ inoremap <C-c> <Esc>
 
 " Files, navigation, tabs
 noremap  <CR> /
+noremap  <BS> ?
 nnoremap \ :!ag<SPACE>
 nnoremap <leader>c :CtrlP<CR>
 nnoremap <leader>q :q<CR>
@@ -25,7 +26,7 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>v :vs<CR>
 nnoremap <leader>t :tab sp<CR>
 nnoremap <leader><leader>e :e<SPACE>
-nnoremap <BS> <C-w><C-w>
+nnoremap <C-BS> <C-w><C-w>
 nnoremap <TAB> gt
 nnoremap <S-TAB> gT
 
