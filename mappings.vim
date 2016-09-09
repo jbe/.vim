@@ -20,7 +20,7 @@ inoremap <C-c> <Esc>
 noremap  <CR> /
 noremap  <BS> ?
 nnoremap \ :!ag<SPACE>
-nnoremap <CR><CR> :CtrlPClearCache<CR>\|:CtrlP<CR>
+nnoremap <CR><CR> :CtrlPClearAllCaches<CR>\|:CtrlP<CR>
 nnoremap <CR><CR><CR> :CtrlPClearCache<CR>\|:CtrlPLine<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>w :w<CR>
