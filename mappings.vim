@@ -98,7 +98,7 @@ nmap <leader>rp :CtrlPClearCache<CR>\|:CtrlP public<CR>
 nmap <leader>rt :CtrlPClearCache<CR>\|:CtrlP spec<CR>
 
 " edit shortcuts
-nnoremap <leader>ev :tabe ~/.vim/
+nnoremap <leader>ev :tabe $VIMHOME/
 nnoremap <leader>ec :tabe ~/conf/
 nnoremap <leader>eh :tabe ~/
 nnoremap <leader>er :tabe ~/repos/
