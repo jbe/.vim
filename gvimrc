@@ -9,7 +9,7 @@ set noeb vb t_vb=
 if has("win32")
   set nolist
   set gfn=Inconsolata-g\ for\ Powerline:h11:cANSI
-  " set gfn=Hack:h10:cANSI
+  au GUIEnter * simalt ~x
 elseif has("gui_macvim")
   set gfn=Monaco\ for\ Powerline:h16
 else
