@@ -20,7 +20,8 @@ inoremap <C-c> <Esc>
 noremap  <CR> /
 noremap  <BS> ?
 nnoremap \ :!ag<SPACE>
-nnoremap <leader>c :CtrlP<CR>
+nnoremap <CR><CR> :CtrlPClearAllCaches<CR>\|:CtrlP<CR>
+nnoremap <CR><CR><CR> :CtrlPClearCache<CR>\|:CtrlPLine<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>v :vs<CR>
@@ -29,6 +30,10 @@ nnoremap <leader><leader>e :e<SPACE>
 nnoremap <C-BS> <C-w><C-w>
 nnoremap <TAB> gt
 nnoremap <S-TAB> gT
+nnoremap <leader><left> <C-w><left>
+nnoremap <leader><right> <C-w><right>
+nnoremap <leader><up> <C-w><up>
+nnoremap <leader><down> <C-w><down>
 
 " UI
 nnoremap <silent> <Space> :set hlsearch! hlsearch?<CR>

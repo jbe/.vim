@@ -23,8 +23,11 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'slim-template/vim-slim'
-
 Plug 'bentayloruk/vim-react-es6-snippets'
+if has("win32")
+  Plug 'groenewege/vim-less'
+endif
+
 
 " Workflow
 Plug 'ciaranm/detectindent'
@@ -51,6 +54,7 @@ Plug 'digitaltoad/vim-jade', { 'for': 'jade' }
 Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'dpwright/vim-tup'
 "Plug 'fasterthanlime/ooc.vim', { 'for': 'ooc' }
 
 " Integration

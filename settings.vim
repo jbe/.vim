@@ -7,8 +7,13 @@ set ruler           " always show cursor position
 set showmode        " display curent mode
 set showcmd         " display incomplete commands
 set number          " show line numbers
-set list            " visual warnings for unsafe characters
-set listchars=tab:▸·,trail:·,nbsp:●
+
+if has("win32")
+  set nolist
+else
+  set list            " visual warnings for unsafe characters
+  set listchars=tab:▸·,trail:·,nbsp:●
+endif
 
 set expandtab
 set shiftwidth=2
