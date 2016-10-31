@@ -18,7 +18,6 @@ else
   let $VIMHOME = $HOME."/.vim"
 endif
 
-source $VIMHOME/variables.vim
 source $VIMHOME/plugins.vim
 source $VIMHOME/settings.vim
 source $VIMHOME/commands.vim
