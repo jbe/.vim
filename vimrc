@@ -12,10 +12,16 @@ set undodir=$HOME/.vim/undo " where to save undo histories
 set undolevels=1000         " how many undos
 set undoreload=10000        " number of lines to save for undo
 
-source ~/vimfiles/variables.vim
-source ~/vimfiles/plugins.vim
-source ~/vimfiles/settings.vim
-source ~/vimfiles/commands.vim
-source ~/vimfiles/autocommands.vim
-source ~/vimfiles/mappings.vim
-source ~/vimfiles/tool_config.vim
+if has('win32') || has ('win64')
+  let $VIMHOME = $HOME."/vimfiles"
+else
+  let $VIMHOME = $HOME."/.vim"
+endif
+
+source $VIMHOME/variables.vim
+source $VIMHOME/plugins.vim
+source $VIMHOME/settings.vim
+source $VIMHOME/commands.vim
+source $VIMHOME/autocommands.vim
+source $VIMHOME/mappings.vim
+source $VIMHOME/tool_config.vim
