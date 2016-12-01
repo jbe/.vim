@@ -28,6 +28,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'MarcWeber/vim-addon-mw-utils' " for snipmate
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
+Plug 'dkprice/vim-easygrep'
 " Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
 "Plug 'easymotion/vim-easymotion'
