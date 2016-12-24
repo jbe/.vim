@@ -57,7 +57,7 @@ nnoremap <leader><leader>s :%s/
 
 " Background jobs
 nmap <leader>f :FocusDispatch 
-nmap <leader>d :Dispatch 
+nmap <leader>d :Dispatch<CR>
 nmap <leader><leader>d :Start 
 nmap <leader>m :Make<CR>
 
