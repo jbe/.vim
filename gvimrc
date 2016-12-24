@@ -50,19 +50,21 @@ function! AdjustFontSize(amount)
     echoerr "You need to run the GTK2 version of Vim to use this function."
   endif
 endfunction
+if has("gui_gtk2") && has("gui_running")
+  function! LargerFont()
+    call AdjustFontSize(1)
+  endfunction
+  command! LargerFont call LargerFont()
 
-function! LargerFont()
-  call AdjustFontSize(1)
-endfunction
-command! LargerFont call LargerFont()
+  function! SmallerFont()
+    call AdjustFontSize(-1)
+  endfunction
+  command! SmallerFont call SmallerFont()
 
-function! SmallerFont()
-  call AdjustFontSize(-1)
-endfunction
-command! SmallerFont call SmallerFont()
+  map + :LargerFont<CR>
+  map - :SmallerFont<CR>
+endif
 
-map + :LargerFont<CR>
-map - :SmallerFont<CR>
 
 " set gfn=Inconsolata-g\ for\ Powerline:h10:cANSI
 highlight Search guibg='peru' guifg='black'
