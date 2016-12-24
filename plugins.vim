@@ -15,6 +15,7 @@ Plug 'scrooloose/syntastic'
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/goyo.vim'
 Plug 'jaxbot/semantic-highlight.vim'
+Plug 'tpope/vim-vinegar'
 "Plug 'altercation/vim-colors-solarized'
 
 " Workflow
@@ -48,7 +49,7 @@ Plug 'tpope/vim-dispatch'
 "Plug 'csexton/jekyll.vim'
 
 " Tools
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar', { 'on':  'TagbarOpenAutoClose' }
 Plug 'gregsexton/gitv'
 Plug 'sjl/gundo.vim'
