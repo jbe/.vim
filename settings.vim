@@ -1,3 +1,6 @@
+
+scriptencoding utf-8
+
 " APPEARANCE
 syntax enable
 set background=dark
