@@ -3,7 +3,7 @@
 
 " set gfn=DejaVu\ Sans\ Mono\ 12
 
-" no bells please:
+" no bells please
 set noeb vb t_vb=
 
 if has("win32")

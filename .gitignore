@@ -1,7 +1,6 @@
 .netrwhist
 passwords.vim
 sessions
-undo/*
-plugged
-autoload/plug.vim.old
+undo
+plugins
 .viminfo
